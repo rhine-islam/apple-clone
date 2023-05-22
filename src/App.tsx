@@ -3,14 +3,16 @@ import MainBanner from "./components/cards/banner/mainBanner";
 import CardOne from "./components/cards/productCards/cardOne";
 import CardTwo from "./components/cards/productCards/cardTwo";
 import Carousel from "./components/carousel/carousel";
+import Directory from "./components/directories/directory";
 import Navbar from "./components/navbar/navbar";
+import TextCard from "./components/textCard/textCard";
 
 function App() {
   return (
     <div>
       <Navbar />
       <Ad />
-      <div className="md:flex-col md:flex md:justify-center md:items-center">
+      <div className="md:flex-col md:flex md:justify-center md:items-center ">
         <MainBanner
           color="white"
           message="Pro Beyond"
@@ -68,6 +70,8 @@ function App() {
           />
         </div>
         <Carousel />
+        <TextCard />
+        <Directory />
       </div>
     </div>
   );
