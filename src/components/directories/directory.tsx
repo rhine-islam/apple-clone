@@ -26,7 +26,7 @@ const Directory = () => {
   return (
     <div>
       {arrayChunk(titles, 5).map((row, i) => (
-        <div key={i} className="grid grid-cols-5 gap-x-20">
+        <div key={i} className="md:grid-cols-5 md:grid gap-x-20">
           {row.map((col: string, i: number) => (
             <SubDirectory title={col} key={i} />
           ))}

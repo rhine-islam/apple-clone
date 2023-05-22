@@ -2,7 +2,7 @@ import React from "react";
 
 const TextCard = () => {
   return (
-    <div className="relative md:w-[977px] py-12 flex flex-col justify-center space-y-4">
+    <div className="relative md:w-[977px] md:py-12 flex flex-col justify-center space-y-4 p-10 md:p-1">
       <p className="text-xs text-justify text-gray-700">
         1. Trade-in values will vary based on the condition, year, and
         configuration of your eligible trade-in device. Not all devices are

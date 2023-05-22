@@ -4,6 +4,7 @@ import CardOne from "./components/cards/productCards/cardOne";
 import CardTwo from "./components/cards/productCards/cardTwo";
 import Carousel from "./components/carousel/carousel";
 import Directory from "./components/directories/directory";
+import Footer from "./components/footer/footer";
 import Navbar from "./components/navbar/navbar";
 import TextCard from "./components/textCard/textCard";
 
@@ -72,6 +73,7 @@ function App() {
         <Carousel />
         <TextCard />
         <Directory />
+        <Footer />
       </div>
     </div>
   );
