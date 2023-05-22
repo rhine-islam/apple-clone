@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAppleWhole } from "@fortawesome/free-solid-svg-icons";
-import "./style.css";
 import SearchIcon from "../../icons/searchIcon";
 import CartIcon from "../../icons/cartIcon";
 
@@ -22,7 +21,7 @@ const FullNavbar = () => {
   return (
     <>
       {open ? (
-        <div className="absolute z-10 w-screen h-screen bg-gradient-to-r from-slate-900 to-slate-700 opacity-95 .bgBlur"></div>
+        <div className="absolute z-10 w-screen h-screen bg-gradient-to-r from-slate-900 to-slate-700 opacity-95"></div>
       ) : null}
       <nav
         className={`w-full  bg-neutral-900  py-4 hidden lg:block z-50 relative md:block ${
@@ -84,7 +83,7 @@ const FullNavbar = () => {
                   Accessories
                 </a>
               </li>
-              <li className="flex flex-col mb-10 gap-y-4 animate-flip-down animate-ease-in">
+              <li className="flex flex-col mb-10 gap-y-4 animate-flip-down ">
                 {" "}
                 <p className="text-xs font-light text-white">Quick Links</p>
                 <a href="#" className="text-sm font-bold text-white">
@@ -104,7 +103,7 @@ const FullNavbar = () => {
                   Financing
                 </a>
               </li>
-              <li className="flex flex-col mb-10 gap-y-4 animate-flip-down animate-ease-in">
+              <li className="flex flex-col mb-10 gap-y-4 animate-flip-down ">
                 {" "}
                 <p className="text-xs font-light text-white">Quick Links</p>
                 <a href="#" className="text-sm font-bold text-white">
