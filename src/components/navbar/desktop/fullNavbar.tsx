@@ -21,7 +21,7 @@ const FullNavbar = () => {
   return (
     <>
       {open ? (
-        <div className="absolute z-10 w-screen h-screen bg-gradient-to-r from-slate-900 to-slate-700 opacity-95"></div>
+        <div className="absolute z-10 w-screen h-screen backdrop-blur-lg bg-black/70"></div>
       ) : null}
       <nav
         className={`w-full  bg-neutral-900  py-4 hidden lg:block z-50 relative md:block ${
