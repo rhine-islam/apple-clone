@@ -3,26 +3,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAppleWhole } from "@fortawesome/free-solid-svg-icons";
 import SearchIcon from "../../icons/searchIcon";
 import CartIcon from "../../icons/cartIcon";
+import style from "../../../style/style";
+import data from "../../../data/data";
 
 const FullNavbar = () => {
   const [open, setOpen] = useState(false);
-  const linkNames = [
-    "Store",
-    "Mac",
-    "iPad",
-    "iPhone",
-    "Watch",
-    "AirPods",
-    "TV & Home",
-    "Entertainment",
-    "Accessories",
-    "Support",
-  ];
   return (
     <>
-      {open ? (
-        <div className="absolute z-10 w-screen h-screen backdrop-blur-lg bg-black/70"></div>
-      ) : null}
+      {open ? <div className={style.navBackdrop}></div> : null}
       <nav
         className={`w-full  bg-neutral-900  py-4 hidden lg:block z-50 relative md:block ${
           open ? "opacity-100 animate-flip-down " : "opacity-50"
@@ -30,10 +18,10 @@ const FullNavbar = () => {
       >
         <ul className="flex items-center justify-center space-x-8 ">
           <FontAwesomeIcon icon={faAppleWhole} className="text-white" />
-          {linkNames.map((name: string, id: number) => {
+          {data.linkNames.map((name: string, id: number) => {
             return (
               <li
-                className="text-sm font-light text-white"
+                className={style.txtWhiteSmL}
                 onMouseEnter={() => {
                   setOpen(true);
                 }}
@@ -57,28 +45,28 @@ const FullNavbar = () => {
             <ul className="grid grid-cols-3 gap-12 mt-6">
               <li className="flex flex-col mb-10 gap-y-4 animate-flip-down">
                 {" "}
-                <p className="text-xs font-light text-white">Shop</p>
-                <a href="#" className="text-2xl font-bold text-white">
+                <p className={style.txtWhiteXsL}>Shop</p>
+                <a href="#" className={style.txtWhite2xlB}>
                   {" "}
                   Shop The Latest
                 </a>
-                <a href="#" className="text-2xl font-bold text-white">
+                <a href="#" className={style.txtWhite2xlB}>
                   {" "}
                   Mac
                 </a>
-                <a href="#" className="text-2xl font-bold text-white">
+                <a href="#" className={style.txtWhite2xlB}>
                   {" "}
                   iPad
                 </a>
-                <a href="#" className="text-2xl font-bold text-white">
+                <a href="#" className={style.txtWhite2xlB}>
                   {" "}
                   iPhone
                 </a>
-                <a href="#" className="text-2xl font-bold text-white">
+                <a href="#" className={style.txtWhite2xlB}>
                   {" "}
                   Apple Watch
                 </a>
-                <a href="#" className="text-2xl font-bold text-white">
+                <a href="#" className={style.txtWhite2xlB}>
                   {" "}
                   Accessories
                 </a>
@@ -86,19 +74,19 @@ const FullNavbar = () => {
               <li className="flex flex-col mb-10 gap-y-4 animate-flip-down ">
                 {" "}
                 <p className="text-xs font-light text-white">Quick Links</p>
-                <a href="#" className="text-sm font-bold text-white">
+                <a href="#" className={style.txtWhiteSmB}>
                   {" "}
                   Find a store
                 </a>
-                <a href="#" className="text-sm font-bold text-white">
+                <a href="#" className={style.txtWhiteSmB}>
                   {" "}
                   Order Status
                 </a>
-                <a href="#" className="text-sm font-bold text-white">
+                <a href="#" className={style.txtWhiteSmB}>
                   {" "}
                   Apple Trade In
                 </a>
-                <a href="#" className="text-sm font-bold text-white">
+                <a href="#" className={style.txtWhiteSmB}>
                   {" "}
                   Financing
                 </a>
@@ -106,19 +94,19 @@ const FullNavbar = () => {
               <li className="flex flex-col mb-10 gap-y-4 animate-flip-down ">
                 {" "}
                 <p className="text-xs font-light text-white">Quick Links</p>
-                <a href="#" className="text-sm font-bold text-white">
+                <a href="#" className={style.txtWhiteSmB}>
                   {" "}
                   Find a store
                 </a>
-                <a href="#" className="text-sm font-bold text-white">
+                <a href="#" className={style.txtWhiteSmB}>
                   {" "}
                   Order Status
                 </a>
-                <a href="#" className="text-sm font-bold text-white">
+                <a href="#" className={style.txtWhiteSmB}>
                   {" "}
                   Apple Trade In
                 </a>
-                <a href="#" className="text-sm font-bold text-white">
+                <a href="#" className={style.txtWhiteSmB}>
                   {" "}
                   Financing
                 </a>

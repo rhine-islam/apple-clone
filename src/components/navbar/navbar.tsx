@@ -4,10 +4,10 @@ import FullNavbar from "./desktop/fullNavbar";
 
 const Navbar = () => {
   return (
-    <nav>
+    <section>
       <MobileNavbar />
       <FullNavbar />
-    </nav>
+    </section>
   );
 };
 

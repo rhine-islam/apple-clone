@@ -6,7 +6,7 @@ import CrossIcon from "../../icons/crossIcon";
 import MenuLink from "../../utls/menuLink";
 import SearchIcon from "../../icons/searchIcon";
 import CartIcon from "../../icons/cartIcon";
-
+import style from "../../../style/style";
 const MobileNavbar = () => {
   const [navbar, setNavbar] = useState(false);
 
@@ -22,7 +22,7 @@ const MobileNavbar = () => {
             {navbar ? null : (
               <FontAwesomeIcon
                 icon={faAppleWhole}
-                className="py-2 text-white"
+                className={`py-2 ${style.txtWhite}`}
               />
             )}
             {navbar ? (

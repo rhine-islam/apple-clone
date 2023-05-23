@@ -1,12 +1,13 @@
 import React from "react";
 import LinkBtn from "../../buttons/linkBtn";
+import style from "../../../style/style";
 
 const MainBanner = ({ color, message, title, image }: any) => {
   return (
     <div className="">
       <div
         className={`absolute flex flex-col justify-center items-center py-4 space-y-4 right-0 left-0 mt-6 ${
-          color === "white" ? "text-white" : "text-black"
+          color === "white" ? style.txtWhite : style.txtBlack
         }`}
       >
         <h1 className={` md:text-5xl text-3xl font-bold text-center`}>
@@ -23,7 +24,7 @@ const MainBanner = ({ color, message, title, image }: any) => {
       <img
         src={image}
         alt="iphone"
-        className="md:w-[2560px] h-[300px] w-[750px] md:h-[700px] right-0 left-0 mx-auto"
+        className="md:w-[2560px] h-[300px] w-[750px] md:h-[700px] right-0 left-0 mx-auto object-cover"
       />
     </div>
   );

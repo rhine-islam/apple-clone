@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ImageCard from "./imageCard";
 import { createUseStyles } from "react-jss";
-
+import images from "../utls/images";
 const useStyles = createUseStyles({
   sliderContainer: {
     "& .slick-slide": {
@@ -19,16 +19,17 @@ const Carousel = () => {
   const classes = useStyles();
 
   const imageSrc = [
-    "1250x703.jpg",
-    "1250x703--0Ggdie.jpg",
-    "1250x703--34nXUu.jpg",
-    "1250x703--CewAWe.jpg",
-    "1250x703--DjKX6r.jpg",
-    "1250x703--FKjTnV.jpg",
-    "1250x703--oe6qiL.jpg",
-    "1250x703--pSYHXc.jpg",
-    "1250x703--rdU3fH.jpg",
-    "1250x703--SFTM2J.jpg",
+    images.image1,
+    images.image2,
+    images.image3,
+    images.image4,
+    images.image5,
+    images.image6,
+    images.image7,
+    images.image8,
+    images.image9,
+    images.image10,
+    images.image11,
   ];
   const settings = {
     dots: true,
@@ -68,7 +69,7 @@ const Carousel = () => {
           return (
             <ImageCard
               message="Mystery Protect What You Have."
-              image={`./assets/images/banner/${image}`}
+              image={image}
               color="white"
             />
           );

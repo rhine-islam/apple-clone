@@ -4,7 +4,7 @@ import LinkBtn from "../../buttons/linkBtn";
 const CardTwo = ({ color, message, title, image }: any) => {
   return (
     <div className="relative py-2">
-      <img src={image} className="md:h-[580px] h-[300px]" />
+      <img src={image} className="md:h-[580px] h-[300px] object-cover" />
       <h1
         className={`absolute text-4xl bottom-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2  ${
           color === "white" ? "text-white" : "text-black"

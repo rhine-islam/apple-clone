@@ -1,17 +1,19 @@
 import { useEffect, useState } from "react";
 import ArrowRightIcon from "../icons/arrowRightIcon";
 import HoverDropdown from "./hoverDropdown";
+import style from "../../style/style";
 
 const MenuLink = ({ name, navbar }: any) => {
   const [open, setOpen] = useState(false);
-  console.log({ navbar: navbar, open: open });
   useEffect(() => {
     if (navbar === false) {
       setOpen(false);
     }
   }, [navbar]);
   return (
-    <div className="flex text-3xl font-semibold text-white hover:text-indigo-200 lg:text-sm lg:font-light ">
+    <div
+      className={`flex  hover:text-indigo-200 lg:text-sm lg:font-light ${style.txtWhite3xlSB}`}
+    >
       <a
         href="javascript:void(0)"
         onMouseOver={() => setOpen(true)}

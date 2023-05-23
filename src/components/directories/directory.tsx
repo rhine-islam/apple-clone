@@ -1,5 +1,6 @@
 import React from "react";
 import SubDirectory from "./subDirectory";
+import data from "../../data/data";
 
 const Directory = () => {
   const arrayChunk = (arr: any, n: number) => {
@@ -8,25 +9,15 @@ const Directory = () => {
     while (array.length) chunks.push(array.splice(0, n));
     return chunks;
   };
-
-  const titles = [
-    "Shop and Learn",
-    "Account",
-    "Apple Store",
-    "For Business",
-    "Apple Values",
-    "Entertainment",
-    "For Education",
-    "Apple Wallet",
-    "For Healthcare",
-    "About Apple",
-    "For Government",
-  ];
+  // console.log({ "⚒️": data.test });
+  // for (const [key, value] of Object.entries(data.test)) {
+  //   console.log(value);
+  // }
 
   return (
     <div>
-      {arrayChunk(titles, 5).map((row, i) => (
-        <div key={i} className="md:grid-cols-5 md:grid gap-x-20">
+      {arrayChunk(Object.keys(data.directories), 5).map((row, i) => (
+        <div key={i} className="md:grid-cols-5 md:grid">
           {row.map((col: string, i: number) => (
             <SubDirectory title={col} key={i} />
           ))}

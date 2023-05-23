@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div>
+    <div className="mb-8 px-12 md:px-2">
       <hr />
-      <div className="flex">
+      <div className="flex items-center flex-col ">
         <p className="text-xs text-gray-500">
           Copyright © 2023 Apple Inc. All rights reserved.
         </p>
