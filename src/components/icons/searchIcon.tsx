@@ -1,6 +1,7 @@
 import React from "react";
+import style from "../../style/style";
 
-const SearchIcon = () => {
+const SearchIcon = ({color}:any) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -8,7 +9,9 @@ const SearchIcon = () => {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="lg:w-4 lg:h-4 h-6 w-6 text-white"
+      className={`lg:w-4 lg:h-4 h-6 w-6 ${
+        color === "dark" ? style.txtWhite : style.txtBlack
+      }`}
     >
       <path
         strokeLinecap="round"

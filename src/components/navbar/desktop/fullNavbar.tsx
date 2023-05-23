@@ -6,24 +6,40 @@ import CartIcon from "../../icons/cartIcon";
 import style from "../../../style/style";
 import data from "../../../data/data";
 import { Link } from "react-router-dom";
-const FullNavbar = () => {
+
+const FullNavbar = ({ navColor }: any) => {
   const [open, setOpen] = useState(false);
   return (
     <>
-      {open ? <div className={style.navBackdrop}></div> : null}
+      {open ? (
+        <div
+          className={
+            navColor === "dark"
+              ? style.navBackdropBlack
+              : style.navBackdropWhite
+          }
+        ></div>
+      ) : null}
       <nav
-        className={`w-full  bg-neutral-900  py-4 hidden lg:block z-50 relative md:block ${
+        className={`w-full  ${
+          navColor === "dark" ? style.navBlack : style.navWhite
+        }  py-4 hidden lg:block z-50 relative md:block ${
           open ? "opacity-100 animate-flip-down " : "opacity-50"
         }`}
       >
         <ul className="flex items-center justify-center space-x-8 ">
           <Link to="/">
-            <FontAwesomeIcon icon={faAppleWhole} className={style.txtWhite} />
+            <FontAwesomeIcon
+              icon={faAppleWhole}
+              className={navColor === "dark" ? style.txtWhite : style.txtBlack}
+            />
           </Link>
           {data.linkNames.map((name: string, id: number) => {
             return (
               <li
-                className={style.txtWhiteSmL}
+                className={
+                  navColor === "dark" ? style.txtWhite : style.txtBlack
+                }
                 onMouseEnter={() => {
                   setOpen(true);
                 }}
@@ -34,8 +50,8 @@ const FullNavbar = () => {
             );
           })}
 
-          <SearchIcon />
-          <CartIcon />
+          <SearchIcon color={navColor} />
+          <CartIcon color={navColor} />
         </ul>
         {open ? (
           <div
@@ -47,68 +63,168 @@ const FullNavbar = () => {
             <ul className="grid grid-cols-3 gap-12 mt-6">
               <li className="flex flex-col mb-10 gap-y-4 animate-flip-down">
                 {" "}
-                <p className={style.txtWhiteXsL}>Shop</p>
-                <a href="#" className={style.txtWhite2xlB}>
+                <p
+                  className={
+                    navColor === "dark" ? style.txtWhiteXsL : style.txtBlackXsL
+                  }
+                >
+                  Shop
+                </p>
+                <a
+                  href="#"
+                  className={
+                    navColor === "dark"
+                      ? style.txtWhite2xlB
+                      : style.txtBlack2xlB
+                  }
+                >
                   {" "}
                   Shop The Latest
                 </a>
-                <a href="#" className={style.txtWhite2xlB}>
+                <a
+                  href="#"
+                  className={
+                    navColor === "dark"
+                      ? style.txtWhite2xlB
+                      : style.txtBlack2xlB
+                  }
+                >
                   {" "}
                   Mac
                 </a>
-                <a href="#" className={style.txtWhite2xlB}>
+                <a
+                  href="#"
+                  className={
+                    navColor === "dark"
+                      ? style.txtWhite2xlB
+                      : style.txtBlack2xlB
+                  }
+                >
                   {" "}
                   iPad
                 </a>
-                <a href="#" className={style.txtWhite2xlB}>
+                <a
+                  href="#"
+                  className={
+                    navColor === "dark"
+                      ? style.txtWhite2xlB
+                      : style.txtBlack2xlB
+                  }
+                >
                   {" "}
                   iPhone
                 </a>
-                <a href="#" className={style.txtWhite2xlB}>
+                <a
+                  href="#"
+                  className={
+                    navColor === "dark"
+                      ? style.txtWhite2xlB
+                      : style.txtBlack2xlB
+                  }
+                >
                   {" "}
                   Apple Watch
                 </a>
-                <a href="#" className={style.txtWhite2xlB}>
+                <a
+                  href="#"
+                  className={
+                    navColor === "dark"
+                      ? style.txtWhite2xlB
+                      : style.txtBlack2xlB
+                  }
+                >
                   {" "}
                   Accessories
                 </a>
               </li>
               <li className="flex flex-col mb-10 gap-y-4 animate-flip-down ">
                 {" "}
-                <p className={style.txtWhiteXsL}>Quick Links</p>
-                <a href="#" className={style.txtWhiteSmB}>
+                <p
+                  className={
+                    navColor === "dark" ? style.txtWhiteXsL : style.txtBlackXsL
+                  }
+                >
+                  Quick Links
+                </p>
+                <a
+                  href="#"
+                  className={
+                    navColor === "dark" ? style.txtWhiteSmB : style.txtBlackSmB
+                  }
+                >
                   {" "}
                   Find a store
                 </a>
-                <a href="#" className={style.txtWhiteSmB}>
+                <a
+                  href="#"
+                  className={
+                    navColor === "dark" ? style.txtWhiteSmB : style.txtBlackSmB
+                  }
+                >
                   {" "}
                   Order Status
                 </a>
-                <a href="#" className={style.txtWhiteSmB}>
+                <a
+                  href="#"
+                  className={
+                    navColor === "dark" ? style.txtWhiteSmB : style.txtBlackSmB
+                  }
+                >
                   {" "}
                   Apple Trade In
                 </a>
-                <a href="#" className={style.txtWhiteSmB}>
+                <a
+                  href="#"
+                  className={
+                    navColor === "dark" ? style.txtWhiteSmB : style.txtBlackSmB
+                  }
+                >
                   {" "}
                   Financing
                 </a>
               </li>
               <li className="flex flex-col mb-10 gap-y-4 animate-flip-down ">
                 {" "}
-                <p className="text-xs font-light text-white">Quick Links</p>
-                <a href="#" className={style.txtWhiteSmB}>
+                <p
+                  className={
+                    navColor === "dark" ? style.txtWhiteXsL : style.txtBlackXsL
+                  }
+                >
+                  Quick Links
+                </p>
+                <a
+                  href="#"
+                  className={
+                    navColor === "dark" ? style.txtWhiteSmB : style.txtBlackSmB
+                  }
+                >
                   {" "}
                   Find a store
                 </a>
-                <a href="#" className={style.txtWhiteSmB}>
+                <a
+                  href="#"
+                  className={
+                    navColor === "dark" ? style.txtWhiteSmB : style.txtBlackSmB
+                  }
+                >
                   {" "}
                   Order Status
                 </a>
-                <a href="#" className={style.txtWhiteSmB}>
+                <a
+                  href="#"
+                  className={
+                    navColor === "dark" ? style.txtWhiteSmB : style.txtBlackSmB
+                  }
+                >
                   {" "}
                   Apple Trade In
                 </a>
-                <a href="#" className={style.txtWhiteSmB}>
+                <a
+                  href="#"
+                  className={
+                    navColor === "dark" ? style.txtWhiteSmB : style.txtBlackSmB
+                  }
+                >
                   {" "}
                   Financing
                 </a>

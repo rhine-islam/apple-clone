@@ -2,7 +2,7 @@ import Navbar from "../components/navbar/navbar";
 function Support() {
   return (
     <div>
-      <Navbar />
+      <Navbar theme="light" />
     </div>
   );
 }

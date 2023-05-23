@@ -13,7 +13,7 @@ import Navbar from "../components/navbar/navbar";
 const Home = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar theme="dark" />
       <Ad />
       <div className="md:flex-col md:flex md:justify-center md:items-center ">
         <MainBanner

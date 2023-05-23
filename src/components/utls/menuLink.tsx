@@ -3,7 +3,7 @@ import ArrowRightIcon from "../icons/arrowRightIcon";
 import HoverDropdown from "./hoverDropdown";
 import style from "../../style/style";
 
-const MenuLink = ({ name, navbar }: any) => {
+const MenuLink = ({ name, navbar, color }: any) => {
   const [open, setOpen] = useState(false);
   useEffect(() => {
     if (navbar === false) {
@@ -12,7 +12,9 @@ const MenuLink = ({ name, navbar }: any) => {
   }, [navbar]);
   return (
     <div
-      className={`flex  hover:text-indigo-200 lg:text-sm lg:font-light ${style.txtWhite3xlSB}`}
+      className={`flex   lg:text-sm lg:font-light  ${
+        color === "dark" ? style.txtWhite3xlSB : style.txtBlack3xlSB
+      }`}
     >
       <a
         href="javascript:void(0)"
@@ -21,7 +23,9 @@ const MenuLink = ({ name, navbar }: any) => {
       >
         {name}
       </a>
-      {navbar === true && open === true ? <ArrowRightIcon /> : null}
+      {navbar === true && open === true ? (
+        <ArrowRightIcon color={color} />
+      ) : null}
     </div>
   );
 };

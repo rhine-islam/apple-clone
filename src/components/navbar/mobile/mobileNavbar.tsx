@@ -7,12 +7,15 @@ import MenuLink from "../../utls/menuLink";
 import SearchIcon from "../../icons/searchIcon";
 import CartIcon from "../../icons/cartIcon";
 import style from "../../../style/style";
-const MobileNavbar = () => {
+
+const MobileNavbar = ({ navColor }: any) => {
   const [navbar, setNavbar] = useState(false);
 
   return (
     <nav
-      className={`w-full  bg-neutral-900 shadow lg:hidden xl:hidden 2xl:hidden md:hidden ${
+      className={`w-full  ${
+        navColor === "dark" ? style.navBlack : style.navWhite
+      } lg:hidden xl:hidden 2xl:hidden md:hidden ${
         navbar ? "opacity-100 h-screen" : "opacity-50"
       }`}
     >
@@ -22,19 +25,21 @@ const MobileNavbar = () => {
             {navbar ? null : (
               <FontAwesomeIcon
                 icon={faAppleWhole}
-                className={`py-2 ${style.txtWhite}`}
+                className={`py-2 ${
+                  navColor === "dark" ? style.txtWhite : style.txtBlack
+                }`}
               />
             )}
             {navbar ? (
               <div onClick={() => setNavbar(!navbar)}>
-                <CrossIcon />
+                <CrossIcon color={navColor} />
               </div>
             ) : (
               <div className="flex items-center space-x-6">
-                <SearchIcon />
-                <CartIcon />
+                <SearchIcon color={navColor} />
+                <CartIcon color={navColor} />
                 <div onClick={() => setNavbar(!navbar)}>
-                  <BarTwoIcon />
+                  <BarTwoIcon color={navColor} />
                 </div>
               </div>
             )}
@@ -47,16 +52,16 @@ const MobileNavbar = () => {
             }`}
           >
             <ul className="items-center justify-center pl-8 space-y-6 md:flex md:space-x-6 md:space-y-0">
-              <MenuLink name="Store" navbar={navbar} />
-              <MenuLink name="Mac" navbar={navbar} />
-              <MenuLink name="iPad" navbar={navbar} />
-              <MenuLink name="iPhone" navbar={navbar} />
-              <MenuLink name="Watch" navbar={navbar} />
-              <MenuLink name="AirPods" navbar={navbar} />
-              <MenuLink name="TV & Home" navbar={navbar} />
-              <MenuLink name="Entertainment" navbar={navbar} />
-              <MenuLink name="Accessories" navbar={navbar} />
-              <MenuLink name="Support" navbar={navbar} />
+              <MenuLink name="Store" navbar={navbar} color={navColor} />
+              <MenuLink name="Mac" navbar={navbar} color={navColor} />
+              <MenuLink name="iPad" navbar={navbar} color={navColor} />
+              <MenuLink name="iPhone" navbar={navbar} color={navColor} />
+              <MenuLink name="Watch" navbar={navbar} color={navColor} />
+              <MenuLink name="AirPods" navbar={navbar} color={navColor} />
+              <MenuLink name="TV & Home" navbar={navbar} color={navColor} />
+              <MenuLink name="Entertainment" navbar={navbar} color={navColor} />
+              <MenuLink name="Accessories" navbar={navbar} color={navColor} />
+              <MenuLink name="Support" navbar={navbar} color={navColor} />
             </ul>
           </div>
         </div>

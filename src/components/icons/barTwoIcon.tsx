@@ -1,6 +1,7 @@
 import React from "react";
+import style from "../../style/style";
 
-const BarTwoIcon = () => {
+const BarTwoIcon = ({ color }: any) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -8,7 +9,9 @@ const BarTwoIcon = () => {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="w-6 h-6 text-white"
+      className={`w-6 h-6 ${
+        color === "dark" ? style.txtWhite : style.txtBlack
+      }`}
     >
       <path
         strokeLinecap="round"

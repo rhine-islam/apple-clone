@@ -1,10 +1,13 @@
 import React from "react";
+import style from "../../style/style";
 
-const CrossIcon = () => {
+const CrossIcon = ({ color }: any) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="w-6 h-6 text-white absolute top-4 right-4"
+      className={`absolute w-6 h-6  top-4 right-4 ${
+        color === "dark" ? style.txtWhite : style.txtBlack
+      }`}
       viewBox="0 0 20 20"
       fill="currentColor"
     >
