@@ -23,6 +23,24 @@ const images = {
   banner7: "./assets/images/banner/promo_mbp__ek7p477bkp6q_large.jpg",
   banner8: "./assets/images/banner/promo_wwdc23__b68ptht3mro2_large.jpg",
   banner9: "./assets/images/banner/tile__cauwwcyyn9hy_large.jpg",
+
+  support1: "./assets/images/support/hero-banner-homepage.image.large_2x.jpg",
+  support2: "./assets/images/support/image-grid-airpods_2x.png",
+  support3: "./assets/images/support/image-grid-ipad_2x.png",
+  support4: "./assets/images/support/image-grid-iphone_2x.png",
+  support5: "./assets/images/support/image-grid-mac_2x.png",
+  support6: "./assets/images/support/image-grid-music_2x.png",
+  support7: "./assets/images/support/image-grid-tv_2x.png",
+  support8: "./assets/images/support/image-grid-watch-_2x.png",
+  support9:
+    "./assets/images/support/tile-feature-accidents-promo-iphone.image.large_2x.png",
+  support10:
+    "./assets/images/support/tile-feature-appletradein-var1.image.large_2x.png",
+  support11: "./assets/images/support/tile-feature-ios16.image.large_2x.png",
+  support12:
+    "./assets/images/support/tile-feature-privacy-skills.image.large_2x.png",
+  support13: "./assets/images/support/tile-split-getsupport.image.large_2x.png",
+  support14: "./assets/images/support/tile-split-supportapp.image.large_2x.png",
 };
 
 export default images;

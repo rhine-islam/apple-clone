@@ -11,6 +11,8 @@ const style = {
   txtBlackSmB: "text-sm font-bold text-black",
   txtWhite3xlSB: "text-3xl font-semibold text-white",
   txtBlack3xlSB: "text-3xl font-semibold text-black",
+  txtBlack5xlSB: "text-5xl font-semibold text-black ",
+  txtBlack6xlB: "text-6xl font-bold text-black ",
   navBackdropBlack:
     "absolute z-10 w-screen h-screen backdrop-blur-lg bg-black/70",
   navBackdropWhite:
