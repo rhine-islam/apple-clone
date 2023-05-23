@@ -5,7 +5,7 @@ import SearchIcon from "../../icons/searchIcon";
 import CartIcon from "../../icons/cartIcon";
 import style from "../../../style/style";
 import data from "../../../data/data";
-
+import { Link } from "react-router-dom";
 const FullNavbar = () => {
   const [open, setOpen] = useState(false);
   return (
@@ -17,7 +17,9 @@ const FullNavbar = () => {
         }`}
       >
         <ul className="flex items-center justify-center space-x-8 ">
-          <FontAwesomeIcon icon={faAppleWhole} className="text-white" />
+          <Link to="/">
+            <FontAwesomeIcon icon={faAppleWhole} className={style.txtWhite} />
+          </Link>
           {data.linkNames.map((name: string, id: number) => {
             return (
               <li
@@ -27,7 +29,7 @@ const FullNavbar = () => {
                 }}
                 key={id}
               >
-                {name}
+                {name === "Support" ? <Link to="/support">{name}</Link> : name}
               </li>
             );
           })}
@@ -73,7 +75,7 @@ const FullNavbar = () => {
               </li>
               <li className="flex flex-col mb-10 gap-y-4 animate-flip-down ">
                 {" "}
-                <p className="text-xs font-light text-white">Quick Links</p>
+                <p className={style.txtWhiteXsL}>Quick Links</p>
                 <a href="#" className={style.txtWhiteSmB}>
                   {" "}
                   Find a store
