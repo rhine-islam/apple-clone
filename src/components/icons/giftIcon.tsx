@@ -4,7 +4,7 @@ import style from "../../style/style";
 const GiftIcon = ({ color }: any) => {
   return (
     <svg
-      height="120"
+      height="90"
       viewBox="0 0 120 120"
       width="120"
       xmlns="http://www.w3.org/2000/svg"
