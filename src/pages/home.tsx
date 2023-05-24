@@ -1,4 +1,4 @@
-import React from "react";
+
 import Ad from "../components/ads/ad";
 import MainBanner from "../components/cards/banner/mainBanner";
 import CardOne from "../components/cards/productCards/cardOne";

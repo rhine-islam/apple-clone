@@ -1,4 +1,4 @@
-import React from "react";
+
 import style from "../../../style/style";
 import LinkBtn from "../../buttons/linkBtn";
 
