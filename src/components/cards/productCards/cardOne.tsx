@@ -6,7 +6,7 @@ const CardOne = ({ color, message, title, image }: any) => {
     <div className="relative py-2">
       <img src={image} className="md:h-[580px] h-[700px] object-cover" />
       <h1
-        className={`absolute text-4xl  top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 md:-mt-10 -mt-28 ${
+        className={`absolute text-3xl  top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 md:-mt-10 -mt-28 ${
           color === "white" ? "text-white" : "text-black"
         }`}
       >
