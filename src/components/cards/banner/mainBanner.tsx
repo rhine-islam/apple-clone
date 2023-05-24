@@ -24,7 +24,7 @@ const MainBanner = ({ color, message, title, image }: any) => {
       <img
         src={image}
         alt="iphone"
-        className="md:w-[2560px] h-[300px] w-[750px] md:h-[700px] right-0 left-0 mx-auto object-cover"
+        className="md:w-[2560px] h-[700px] w-auto md:h-[700px] right-0 left-0 mx-auto md:object-cover object-cover "
       />
     </div>
   );
