@@ -13,13 +13,13 @@ const CardOne = ({ color, message, title, image }: any) => {
         {title}
       </h1>
       <p
-        className={`absolute text-2xl  top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-8 md:mt-1 ${
+        className={`absolute text-2xl  top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-12 md:mt-1 ${
           color === "white" ? "text-white" : "text-black"
         }`}
       >
         {message}
       </p>
-      <div className="absolute flex mt-16 space-x-6 -translate-x-1/2 -translate-y-1/2 top-1/4 left-1/2 md:mt-10">
+      <div className="absolute flex mt-24 space-x-6 -translate-x-1/2 -translate-y-1/2 top-1/4 left-1/2 md:mt-10">
         <LinkBtn name="Learn More" />
         <LinkBtn name="Buy" />
       </div>
