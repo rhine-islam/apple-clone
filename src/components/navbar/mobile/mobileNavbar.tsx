@@ -7,6 +7,7 @@ import MenuLink from "../../utls/menuLink";
 import SearchIcon from "../../icons/searchIcon";
 import CartIcon from "../../icons/cartIcon";
 import style from "../../../style/style";
+import { Link } from "react-router-dom";
 
 const MobileNavbar = ({ navColor }: any) => {
   const [navbar, setNavbar] = useState(false);
@@ -23,12 +24,14 @@ const MobileNavbar = ({ navColor }: any) => {
         <div>
           <div className="flex items-center justify-between py-2 md:py-2 md:block">
             {navbar ? null : (
-              <FontAwesomeIcon
-                icon={faAppleWhole}
-                className={`py-2 ${
-                  navColor === "dark" ? style.txtWhite : style.txtBlack
-                }`}
-              />
+              <Link to="/">
+                <FontAwesomeIcon
+                  icon={faAppleWhole}
+                  className={`py-2 ${
+                    navColor === "dark" ? style.txtWhite : style.txtBlack
+                  }`}
+                />
+              </Link>
             )}
             {navbar ? (
               <div onClick={() => setNavbar(!navbar)}>
@@ -61,6 +64,7 @@ const MobileNavbar = ({ navColor }: any) => {
               <MenuLink name="TV & Home" navbar={navbar} color={navColor} />
               <MenuLink name="Entertainment" navbar={navbar} color={navColor} />
               <MenuLink name="Accessories" navbar={navbar} color={navColor} />
+
               <MenuLink name="Support" navbar={navbar} color={navColor} />
             </ul>
           </div>

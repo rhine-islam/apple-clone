@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import ArrowRightIcon from "../icons/arrowRightIcon";
-import HoverDropdown from "./hoverDropdown";
 import style from "../../style/style";
+import { Link } from "react-router-dom";
 
 const MenuLink = ({ name, navbar, color }: any) => {
   const [open, setOpen] = useState(false);
@@ -21,7 +21,7 @@ const MenuLink = ({ name, navbar, color }: any) => {
         onMouseOver={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}
       >
-        {name}
+        {name === "Support" ? <Link to="/support">{name}</Link> : name}
       </a>
       {navbar === true && open === true ? (
         <ArrowRightIcon color={color} />
