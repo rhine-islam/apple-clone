@@ -14,15 +14,15 @@ const MobileNavbar = ({ navColor }: any) => {
 
   return (
     <nav
-      className={`w-full  ${
+      className={`w-full overscroll-auto  ${
         navColor === "dark" ? style.navBlack : style.navWhite
       } lg:hidden xl:hidden 2xl:hidden md:hidden ${
-        navbar ? "opacity-100 h-screen" : "opacity-50"
+        navbar ? "opacity-100 h-screen " : "opacity-50"
       }`}
     >
       <div className="px-4 mx-auto md:items-center md:flex md:px-8">
         <div>
-          <div className="flex items-center justify-between py-2 md:py-2 md:block">
+          <div className="flex items-center justify-between py-1 md:py-2 md:block">
             {navbar ? null : (
               <Link to="/">
                 <FontAwesomeIcon
