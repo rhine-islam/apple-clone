@@ -2,16 +2,16 @@ import React from "react";
 import style from "../../../../style/style";
 import LinkBtn from "../../../buttons/linkBtn";
 import images from "../../../utls/images";
+import data from "../../../../data/data";
 
 const Card2 = () => {
   return (
     <section className="flex flex-col items-center py-12 space-y-6">
       <h1 className={`${style.txtBlack5xlSB} text-center`}>
-        Apple Support app
+        {data.support?.[2].title}
       </h1>
       <p className={`${style.txtBlack} text-lg`}>
-        Get help for all of your Apple products in one place, or connect with an
-        expert.
+        {data.support?.[2].description}
       </p>
       <LinkBtn name=" Download" />
       <LinkBtn name=" Get to know the Apple Support app" />

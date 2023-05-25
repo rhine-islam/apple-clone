@@ -2,17 +2,15 @@ import React from "react";
 import style from "../../../style/style";
 import LinkBtn from "../../buttons/linkBtn";
 import images from "../../utls/images";
+import data from "../../../data/data";
 
 const Privacy = () => {
   return (
     <section className="flex flex-col items-center py-12 space-y-8">
       <h1 className={`${style.txtBlack5xlSB} text-center`}>
-        Take charge of your privacy
+        {data.privacy?.title}
       </h1>
-      <p className={`${style.txtBlack} text-lg`}>
-        Join a 30-minute session at the Apple Store and learn how to protect
-        your privacy on iPhone.
-      </p>
+      <p className={`${style.txtBlack} text-lg`}>{data.privacy?.description}</p>
       <LinkBtn name="Learn How" />
       <img
         src={images.support12}

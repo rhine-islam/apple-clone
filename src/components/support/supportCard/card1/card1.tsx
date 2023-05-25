@@ -2,14 +2,16 @@ import React from "react";
 import style from "../../../../style/style";
 import LinkBtn from "../../../buttons/linkBtn";
 import images from "../../../utls/images";
+import data from "../../../../data/data";
 
 const Card1 = () => {
   return (
     <section className="flex flex-col items-center py-12 space-y-8">
-      <h1 className={`${style.txtBlack5xlSB} text-center`}>Get Support</h1>
+      <h1 className={`${style.txtBlack5xlSB} text-center`}>
+        {data.support?.[1].title}
+      </h1>
       <p className={`${style.txtBlack} text-lg`}>
-        Give us a few details and we’ll offer the best solution. Connect by
-        phone, chat, email, and more.
+        {data.support?.[1].description}
       </p>
       <button className={`w-32 h-10 bg-black rounded-full ${style.txtWhite}`}>
         Start Now

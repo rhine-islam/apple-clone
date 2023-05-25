@@ -112,6 +112,81 @@ const data = {
     7: ` Major League Baseball trademarks and copyrights are used with permission
         of MLB Advanced Media, L.P. All rights reserved.`,
   },
+  guide: {
+    1: {
+      title: "Beware of counterfeit part",
+      description: `Some counterfeit and third party power adapters and batteries may
+            not be designed properly and could result in safety issues. To
+            ensure you receive a genuine Apple battery during a battery
+            replacement, we recommend visiting an Apple Store or Apple
+            Authorized Service Provider. If you need a replacement adapter to
+            charge your Apple device, we recommend getting an Apple power
+            adapter. Also non-genuine replacement displays may have compromised
+            visual quality and may fail to work correctly. Apple-certified
+            screen repairs are performed by trusted experts who use genuine
+            Apple parts.`,
+    },
+    2: {
+      title: "Be aware of gift card scams",
+      description: `Be aware of scams involving Apple Gift Cards, App Store & iTunes
+            Gift Cards, and Apple Store Gift Cards.`,
+    },
+  },
+  repairs: {
+    1: {
+      title: "My Support",
+      description: `Get up to date information about your Apple products including coverage,
+        repairs, and much more.`,
+    },
+    2: {
+      title: "AppleCare+",
+      description: `Get unlimited repairs for accidental damage protection, 24/7 priority access to Apple experts, and more.`,
+    },
+    3: {
+      title: "Apple Trade In",
+      description: `Turn an eligible device into credit towards a new one, or recycle it for free. `,
+    },
+    4: {
+      title: "Safe and reliable repairs",
+      description: `At Apple, every product we make is built to last. We design durable,
+          easy-to-use devices with innovative features that customers depend on,
+          all while protecting their privacy and data. Customers should have
+          access to safe, reliable, and secure repairs with genuine Apple parts
+          if they need them. Learn more about Apple’s approach to expanding
+          access to safe and reliable repairs. View (PDF).`,
+    },
+  },
+  support: {
+    1: {
+      title: "Get Support",
+      description: `Give us a few details and we’ll offer the best solution. Connect by
+        phone, chat, email, and more.`,
+    },
+    2: {
+      title: "Apple Support app",
+      description: `Get help for all of your Apple products in one place, or connect with an
+        expert.`,
+    },
+  },
+  privacy: {
+    title: "Take charge of your privacy",
+    description: `Join a 30-minute session at the Apple Store and learn how to protect
+        your privacy on iPhone.`,
+  },
+  update: {
+    title: "Get the latest",
+    description: `Update your iPhone or iPad to the latest version of iOS or iPadOS.`,
+  },
+  servidePrograms: {
+    title: "Apple Service Programs",
+    data: [
+      "Apple Watch Series 6 Service Program for Blank Screen Issue",
+      "iPhone 12 and iPhone 12 Pro Service Program for No Sound Issues",
+      "iPhone 11 Display Module Replacement Program for Touch Issues",
+      "15-inch MacBook Pro Battery Recall Program",
+      "Apple Three-Prong AC Wall Plug Adapter Recall Program",
+    ],
+  },
 };
 
 export default data;
