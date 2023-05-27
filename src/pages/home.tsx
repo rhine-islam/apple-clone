@@ -1,4 +1,3 @@
-
 import Ad from "../components/ads/ad";
 import MainBanner from "../components/cards/banner/mainBanner";
 import CardOne from "../components/cards/productCards/cardOne";
@@ -14,8 +13,9 @@ const Home = () => {
   return (
     <div>
       <Navbar theme="dark" />
-      <Ad />
+
       <div className="md:flex-col md:flex md:justify-center md:items-center ">
+        <Ad />
         <MainBanner
           color="white"
           message="Pro Beyond"

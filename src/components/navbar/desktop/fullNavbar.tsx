@@ -23,8 +23,12 @@ const FullNavbar = ({ navColor }: any) => {
       <nav
         className={`w-full  ${
           navColor === "dark" ? style.navBlack : style.navWhite
-        }  py-4 hidden lg:block z-50 relative md:block ${
-          open ? "opacity-100 animate-flip-down " : "opacity-50"
+        }  py-4 hidden lg:block z-50 fixed md:block ${
+          open === true && navColor === "dark"
+            ? `animate-flip-down ${style.navBlackSolid}`
+            : open === true && navColor === "white"
+            ? `animate-flip-down ${style.navWhiteSolid}`
+            : null
         }`}
       >
         <ul className="flex items-center justify-center space-x-8 ">

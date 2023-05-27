@@ -20,8 +20,10 @@ const style = {
   navBackdropWhite:
     "absolute z-10 w-screen h-screen backdrop-blur-lg bg-white/70",
   txtGrayXs: "text-xs text-gray-700 text-justify",
-  navWhite: "bg-gray-200 shadow-xl",
-  navBlack: "bg-neutral-900",
+  navWhite: "backdrop-blur-lg bg-white/70 shadow-xl",
+  navBlack: "backdrop-blur-lg bg-black/40 ",
+  navWhiteSolid: "backdrop-blur-lg bg-white/90 shadow-xl",
+  navBlackSolid: "backdrop-blur-lg bg-black/90 ",
 };
 
 export default style;
