@@ -55,7 +55,8 @@ const FullNavbar = ({ navColor }: any) => {
               className={navColor === "dark" ? style.txtWhite : style.txtBlack}
             />
           </Link>
-          {data.linkNames.map((name: string, id: number) => {
+
+          {Object.keys(data.navs).map((name: string, id: number) => {
             return (
               <li
                 className={`font-light ${
