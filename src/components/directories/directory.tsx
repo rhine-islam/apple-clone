@@ -15,11 +15,13 @@ const Directory = () => {
   // }
 
   return (
-    <div>
-      {arrayChunk(Object.keys(data.directories), 5).map((row, i) => (
-        <div key={i} className="md:grid-cols-5 md:grid">
+    <div className="grid grid-flow-col-dense grid-cols-2 space-x-4">
+      {arrayChunk(Object.keys(data.directories), 2).map((row, i) => (
+        <div key={i} className="md:flex md:flex-col">
           {row.map((col: string, i: number) => (
-            <SubDirectory title={col} key={i} />
+            <div className="">
+              <SubDirectory title={col} key={i} />
+            </div>
           ))}
         </div>
       ))}

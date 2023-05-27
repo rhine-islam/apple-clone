@@ -58,9 +58,9 @@ const FullNavbar = ({ navColor }: any) => {
           {data.linkNames.map((name: string, id: number) => {
             return (
               <li
-                className={
+                className={`font-light ${
                   navColor === "dark" ? style.txtWhite : style.txtBlack
-                }
+                }`}
                 onMouseEnter={() => {
                   setOpen(true);
                 }}

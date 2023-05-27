@@ -50,6 +50,11 @@ const data = {
       "Health on Apple Watch",
       "Health Records on iPhone",
     ],
+    "For Privacy": [
+      "Apple in Healthcare",
+      "Health on Apple Watch",
+      "Health Records on iPhone",
+    ],
     "For Government": ["Shop for Government", "Shop for Veterans and Military"],
     "Apple Values": [
       "Accessibility",
