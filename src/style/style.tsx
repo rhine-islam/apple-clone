@@ -1,9 +1,9 @@
 const style = {
-  txtWhite: "text-white",
+  txtWhite: "text-white font-sf",
   txtBlack: "text-black",
   txtWhiteSmL: "text-sm font-light text-white",
   txtBlackSmL: "text-sm font-light text-black",
-  txtWhiteXsL: "text-xs font-light text-white",
+  txtWhiteXsL: "text-xs font-light text-white ",
   txtBlackXsL: "text-xs font-light text-black",
   txtWhite2xlB: "text-2xl font-bold text-white",
   txtBlack2xlB: "text-2xl font-bold text-black",
@@ -15,10 +15,9 @@ const style = {
   txtBlack6xlB: "text-6xl font-bold text-black ",
   txtBlackXl: "text-black text-xl ",
   txtBlackLg: "text-black text-lg ",
-  navBackdropBlack:
-    "absolute z-10 w-screen h-screen backdrop-blur-lg bg-black/70",
+  navBackdropBlack: "fixed z-10 w-screen h-screen backdrop-blur-lg bg-black/70",
   navBackdropWhite:
-    "absolute z-10 w-screen h-screen backdrop-blur-lg bg-white/70",
+    "absolute z-10 w-screen h-screen backdrop-blur-lg bg-white/70 ",
   txtGrayXs: "text-xs text-gray-700 text-justify",
   navWhite: "backdrop-blur-lg bg-white/70 shadow-xl",
   navBlack: "backdrop-blur-lg bg-black/40 ",

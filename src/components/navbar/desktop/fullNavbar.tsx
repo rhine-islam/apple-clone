@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAppleWhole } from "@fortawesome/free-solid-svg-icons";
 import SearchIcon from "../../icons/searchIcon";
@@ -9,6 +9,23 @@ import { Link } from "react-router-dom";
 
 const FullNavbar = ({ navColor }: any) => {
   const [open, setOpen] = useState(false);
+  const [offset, setOffset] = useState(0);
+
+  useEffect(() => {
+    const onScroll = () => setOffset(window.pageYOffset);
+
+    window.removeEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  });
+
+  useEffect(() => {
+    if (offset > 300) {
+      setOpen(false);
+      setOffset(0);
+    }
+  });
+
   return (
     <>
       {open ? (
@@ -23,7 +40,7 @@ const FullNavbar = ({ navColor }: any) => {
       <nav
         className={`w-full  ${
           navColor === "dark" ? style.navBlack : style.navWhite
-        }  py-4 hidden lg:block z-50 fixed md:block ${
+        }  py-3 hidden lg:block z-50 fixed md:block  ${
           open === true && navColor === "dark"
             ? `animate-flip-down ${style.navBlackSolid}`
             : open === true && navColor === "white"
@@ -61,6 +78,9 @@ const FullNavbar = ({ navColor }: any) => {
           <div
             className="flex justify-center -ml-64"
             onMouseLeave={() => {
+              setOpen(false);
+            }}
+            onScroll={() => {
               setOpen(false);
             }}
           >
