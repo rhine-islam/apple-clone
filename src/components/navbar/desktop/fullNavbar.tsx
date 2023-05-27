@@ -6,11 +6,12 @@ import CartIcon from "../../icons/cartIcon";
 import style from "../../../style/style";
 import data from "../../../data/data";
 import { Link } from "react-router-dom";
+import NavDropdown from "./dropdown/navDropdown";
 
 const FullNavbar = ({ navColor }: any) => {
   const [open, setOpen] = useState(false);
   const [offset, setOffset] = useState(0);
-
+  const [linkName, setLinkName] = useState<any>("");
   useEffect(() => {
     const onScroll = () => setOffset(window.pageYOffset);
 
@@ -25,6 +26,17 @@ const FullNavbar = ({ navColor }: any) => {
       setOffset(0);
     }
   });
+
+  console.log(linkName);
+  // {
+  //   Object.entries(data.navs).map((key, id) =>
+  //     Object.entries(key[1]).map((data, id) => {
+  //       data[1].map((value, id) => {
+  //         console.log(data[0], value);
+  //       });
+  //     })
+  //   );
+  // }
 
   return (
     <>
@@ -64,6 +76,7 @@ const FullNavbar = ({ navColor }: any) => {
                 }`}
                 onMouseEnter={() => {
                   setOpen(true);
+                  setLinkName(name);
                 }}
                 key={id}
               >
@@ -77,184 +90,20 @@ const FullNavbar = ({ navColor }: any) => {
         </ul>
         {open ? (
           <div
-            className="flex justify-center -ml-64"
+            className="flex justify-around "
             onMouseLeave={() => {
               setOpen(false);
+              setLinkName("");
             }}
             onScroll={() => {
               setOpen(false);
             }}
           >
-            <ul className="grid grid-cols-3 gap-12 mt-6">
-              <li className="flex flex-col mb-10 gap-y-4 animate-flip-down">
-                {" "}
-                <p
-                  className={
-                    navColor === "dark" ? style.txtWhiteXsL : style.txtBlackXsL
-                  }
-                >
-                  Shop
-                </p>
-                <a
-                  href="#"
-                  className={
-                    navColor === "dark"
-                      ? style.txtWhite2xlB
-                      : style.txtBlack2xlB
-                  }
-                >
-                  {" "}
-                  Shop The Latest
-                </a>
-                <a
-                  href="#"
-                  className={
-                    navColor === "dark"
-                      ? style.txtWhite2xlB
-                      : style.txtBlack2xlB
-                  }
-                >
-                  {" "}
-                  Mac
-                </a>
-                <a
-                  href="#"
-                  className={
-                    navColor === "dark"
-                      ? style.txtWhite2xlB
-                      : style.txtBlack2xlB
-                  }
-                >
-                  {" "}
-                  iPad
-                </a>
-                <a
-                  href="#"
-                  className={
-                    navColor === "dark"
-                      ? style.txtWhite2xlB
-                      : style.txtBlack2xlB
-                  }
-                >
-                  {" "}
-                  iPhone
-                </a>
-                <a
-                  href="#"
-                  className={
-                    navColor === "dark"
-                      ? style.txtWhite2xlB
-                      : style.txtBlack2xlB
-                  }
-                >
-                  {" "}
-                  Apple Watch
-                </a>
-                <a
-                  href="#"
-                  className={
-                    navColor === "dark"
-                      ? style.txtWhite2xlB
-                      : style.txtBlack2xlB
-                  }
-                >
-                  {" "}
-                  Accessories
-                </a>
-              </li>
-              <li className="flex flex-col mb-10 gap-y-4 animate-flip-down ">
-                {" "}
-                <p
-                  className={
-                    navColor === "dark" ? style.txtWhiteXsL : style.txtBlackXsL
-                  }
-                >
-                  Quick Links
-                </p>
-                <a
-                  href="#"
-                  className={
-                    navColor === "dark" ? style.txtWhiteSmB : style.txtBlackSmB
-                  }
-                >
-                  {" "}
-                  Find a store
-                </a>
-                <a
-                  href="#"
-                  className={
-                    navColor === "dark" ? style.txtWhiteSmB : style.txtBlackSmB
-                  }
-                >
-                  {" "}
-                  Order Status
-                </a>
-                <a
-                  href="#"
-                  className={
-                    navColor === "dark" ? style.txtWhiteSmB : style.txtBlackSmB
-                  }
-                >
-                  {" "}
-                  Apple Trade In
-                </a>
-                <a
-                  href="#"
-                  className={
-                    navColor === "dark" ? style.txtWhiteSmB : style.txtBlackSmB
-                  }
-                >
-                  {" "}
-                  Financing
-                </a>
-              </li>
-              <li className="flex flex-col mb-10 gap-y-4 animate-flip-down ">
-                {" "}
-                <p
-                  className={
-                    navColor === "dark" ? style.txtWhiteXsL : style.txtBlackXsL
-                  }
-                >
-                  Quick Links
-                </p>
-                <a
-                  href="#"
-                  className={
-                    navColor === "dark" ? style.txtWhiteSmB : style.txtBlackSmB
-                  }
-                >
-                  {" "}
-                  Find a store
-                </a>
-                <a
-                  href="#"
-                  className={
-                    navColor === "dark" ? style.txtWhiteSmB : style.txtBlackSmB
-                  }
-                >
-                  {" "}
-                  Order Status
-                </a>
-                <a
-                  href="#"
-                  className={
-                    navColor === "dark" ? style.txtWhiteSmB : style.txtBlackSmB
-                  }
-                >
-                  {" "}
-                  Apple Trade In
-                </a>
-                <a
-                  href="#"
-                  className={
-                    navColor === "dark" ? style.txtWhiteSmB : style.txtBlackSmB
-                  }
-                >
-                  {" "}
-                  Financing
-                </a>
-              </li>
-            </ul>
+            {Object.entries(data.navs).map((key: any, id: number) =>
+              key[0] === linkName ? (
+                <NavDropdown navColor={navColor} data={key[1]} />
+              ) : null
+            )}
           </div>
         ) : null}
       </nav>

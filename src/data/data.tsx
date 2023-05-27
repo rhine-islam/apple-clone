@@ -402,6 +402,32 @@ const data = {
       "Apple Three-Prong AC Wall Plug Adapter Recall Program",
     ],
   },
+
+  // navs: {
+  //   Store: {
+  //     Shop: [
+  //       "Shop the Latest",
+  //       "Mac",
+  //       "iPad",
+  //       "iPhone",
+  //       "Apple Watch",
+  //       "Accessories",
+  //     ],
+  //     "Quick Links": [
+  //       "Find a Store",
+  //       "Order Status",
+  //       "Apple Trade In",
+  //       "Financing",
+  //     ],
+  //     "Shop Special Stores": [
+  //       "Certified Refurbished",
+  //       "Education",
+  //       "Business",
+  //       "Vererans and Military",
+  //       "Government",
+  //     ],
+  //   },
+  // },
 };
 
 export default data;
