@@ -94,7 +94,7 @@ const Home = () => {
         {/* <Carousel /> */}
         <TextCard />
         <Directory />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </div>
   );
