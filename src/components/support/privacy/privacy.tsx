@@ -6,7 +6,7 @@ import data from "../../../data/data";
 
 const Privacy = () => {
   return (
-    <section className="flex flex-col items-center py-12 space-y-8">
+    <section className="flex flex-col items-center px-6 py-12 space-y-8 md:px-1">
       <h1 className={`${style.txtBlack5xlSB} text-center`}>
         {data.privacy?.title}
       </h1>

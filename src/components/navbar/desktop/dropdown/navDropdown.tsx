@@ -5,10 +5,14 @@ import DropDownItem from "./dropDownItem";
 const NavDropdown = ({ data, navColor }: any) => {
   return (
     <div>
-      <ul className="grid grid-cols-3 gap-12 mt-6">
+      <ul className="grid grid-cols-4 gap-12 mt-6">
         {Object.entries(data).map((key, id) => {
           return (
-            <li className="flex flex-col mb-10 gap-y-4 ">
+            <li
+              className={`flex flex-col mb-10 gap-y-4 ${
+                id === 0 ? "col-span-2" : null
+              }`}
+            >
               <p
                 className={
                   navColor === "dark" ? style.txtWhiteXsL : style.txtBlackXsL

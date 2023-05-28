@@ -15,7 +15,7 @@ const MobileNavbar = ({ navColor }: any) => {
   return (
     <nav
       className={`w-full overscroll-auto  ${
-        navColor === "dark" ? style.navBlack : style.navWhite
+        navColor === "dark" ? "bg-black" : style.navWhite
       } lg:hidden xl:hidden 2xl:hidden md:hidden ${
         navbar ? "opacity-100 h-screen " : "opacity-50"
       }`}

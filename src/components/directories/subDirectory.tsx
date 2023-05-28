@@ -25,7 +25,7 @@ const SubDirectory = ({ title }: any | string) => {
             ? key[1].map((value: any, id: number) => {
                 return (
                   <p
-                    className="hidden text-sm text-gray-700 text-start md:block"
+                    className="hidden text-sm text-gray-700 text-start md:block font-sf"
                     key={id}
                   >
                     {value}

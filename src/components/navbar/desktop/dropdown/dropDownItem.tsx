@@ -9,7 +9,7 @@ const DropDownItem = ({ navColor, data, index }: any) => {
           <a
             key={id}
             href="#"
-            className={`animate-fade-down ${
+            className={`animate-fade animate-ease-in ${
               navColor === "dark"
                 ? index === 0
                   ? style.txtWhite2xlB

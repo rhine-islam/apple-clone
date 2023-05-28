@@ -19,7 +19,7 @@ const Search = () => {
               />
               <input
                 type="text"
-                className="md:w-[1400px] w-[500px] px-12 bg-white border rounded-lg h-14 focus:outline-none focus:ring focus:ring-blue-300 hover:cursor-pointer "
+                className="md:w-[1400px] w-[450px] px-12 bg-white border rounded-lg h-14 focus:outline-none focus:ring focus:ring-blue-300 hover:cursor-pointer "
                 name=""
                 placeholder="Search Support"
               />

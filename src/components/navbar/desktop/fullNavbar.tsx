@@ -27,7 +27,6 @@ const FullNavbar = ({ navColor }: any) => {
     }
   });
 
-  console.log(linkName);
   // {
   //   Object.entries(data.navs).map((key, id) =>
   //     Object.entries(key[1]).map((data, id) => {
@@ -90,7 +89,7 @@ const FullNavbar = ({ navColor }: any) => {
         </ul>
         {open ? (
           <div
-            className="flex justify-around "
+            className="flex justify-center -ml-48" 
             onMouseLeave={() => {
               setOpen(false);
               setLinkName("");

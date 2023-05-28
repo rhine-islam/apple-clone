@@ -9,13 +9,9 @@ const Directory = () => {
     while (array.length) chunks.push(array.splice(0, n));
     return chunks;
   };
-  // console.log({ "⚒️": data.test });
-  // for (const [key, value] of Object.entries(data.test)) {
-  //   console.log(value);
-  // }
 
   return (
-    <div className="grid grid-flow-col-dense grid-cols-2 space-x-4">
+    <div className="grid-cols-2 md:space-x-4 md:grid-flow-col-dense md:grid">
       {arrayChunk(Object.keys(data.directories), 2).map((row, i) => (
         <div key={i} className="md:flex md:flex-col">
           {row.map((col: string, i: number) => (

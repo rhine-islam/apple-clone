@@ -21,7 +21,7 @@ function Support() {
       <SupportCard />
       <MySupport />
       <Guide />
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col md:items-center">
         <Directory />
         <Footer />
       </div>
