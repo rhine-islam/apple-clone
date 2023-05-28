@@ -53,9 +53,9 @@ const FullNavbar = ({ navColor }: any) => {
           navColor === "dark" ? style.navBlack : style.navWhite
         }  py-3 hidden lg:block z-50 fixed md:block  ${
           open === true && navColor === "dark"
-            ? `animate-flip-down ${style.navBlackSolid}`
+            ? `animate-flip-down animate-ease-out ${style.navBlackSolid}`
             : open === true && navColor === "white"
-            ? `animate-flip-down ${style.navWhiteSolid}`
+            ? `animate-flip-down animate-ease-out ${style.navWhiteSolid}`
             : null
         }`}
       >
@@ -89,7 +89,7 @@ const FullNavbar = ({ navColor }: any) => {
         </ul>
         {open ? (
           <div
-            className="flex justify-center -ml-48" 
+            className="flex justify-center py-6 -ml-48"
             onMouseLeave={() => {
               setOpen(false);
               setLinkName("");

@@ -4,7 +4,7 @@ import data from "../../data/data";
 
 const TextCard = () => {
   return (
-    <div className="relative md:w-[977px] md:py-12 flex flex-col justify-center space-y-4 p-10 md:p-1">
+    <div className="relative flex flex-col justify-center w-full p-10 space-y-4 md:w-full md:p-6 lg:w-[1100px] lg:p-14">
       <p className={style.txtGrayXs}>{data.term[1]}</p>
       <p className={style.txtGrayXs}>{data.term[2]}</p>
       <p className={style.txtGrayXs}>{data.term[3]}</p>

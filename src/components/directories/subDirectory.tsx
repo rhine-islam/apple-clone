@@ -10,13 +10,11 @@ const SubDirectory = ({ title }: any | string) => {
   // });
   return (
     <div className="px-12 py-4 md:px-1">
-      <h1 className={style.txtBlackSmB}>
-        {title}{" "}
-        <FontAwesomeIcon
-          icon={faPlus}
-          className="absolute visible right-16 md:hidden"
-        />
-      </h1>
+      <h1 className={style.txtBlackSmB}>{title} </h1>
+      <FontAwesomeIcon
+        icon={faPlus}
+        className="absolute visible -mt-6 right-16 md:hidden"
+      />
       <hr className="visible md:hidden" />
 
       <div className="">

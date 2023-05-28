@@ -21,8 +21,8 @@ const style = {
   txtGrayXs: "text-xs text-gray-700 text-justify font-sf",
   navWhite: "backdrop-blur-lg bg-white/70 shadow-xl ",
   navBlack: "backdrop-blur-lg bg-black/40 ",
-  navWhiteSolid: "backdrop-blur-lg bg-white/90 shadow-xl",
-  navBlackSolid: "backdrop-blur-lg bg-black/90 ",
+  navWhiteSolid: "bg-gray-50 shadow-xl ",
+  navBlackSolid: "bg-neutral-900",
 };
 
 export default style;

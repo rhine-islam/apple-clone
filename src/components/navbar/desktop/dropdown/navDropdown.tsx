@@ -5,7 +5,7 @@ import DropDownItem from "./dropDownItem";
 const NavDropdown = ({ data, navColor }: any) => {
   return (
     <div>
-      <ul className="grid grid-cols-4 gap-12 mt-6">
+      <ul className="grid grid-cols-4 gap-12 mt-6 ">
         {Object.entries(data).map((key, id) => {
           return (
             <li

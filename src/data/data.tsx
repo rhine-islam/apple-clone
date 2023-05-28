@@ -235,7 +235,19 @@ const data = {
       "Accessories",
       "Gift Cards",
     ],
+    "Apple Wallet": ["Wallet", "Apple Card", "Apple Pay", "Apple Cash"],
     Account: ["Manage Your Apple ID", "Apple Store Account", "iCloud.com"],
+    Entertainment: [
+      "Apple One",
+      "Apple TV+",
+      "Apple Music",
+      "Apple Arcade",
+      "Apple Fitness+",
+      "Apple News+",
+      "Apple Podcasts",
+      "Apple Books",
+      "App Store",
+    ],
     "Apple Store": [
       "Find a Store",
       "Genius Bar",
@@ -260,12 +272,8 @@ const data = {
       "Health on Apple Watch",
       "Health Records on iPhone",
     ],
-    "For Privacy": [
-      "Apple in Healthcare",
-      "Health on Apple Watch",
-      "Health Records on iPhone",
-    ],
     "For Government": ["Shop for Government", "Shop for Veterans and Military"],
+
     "Apple Values": [
       "Accessibility",
       "Education",
@@ -284,18 +292,6 @@ const data = {
       "Events",
       "Contact Apple",
     ],
-    Entertainment: [
-      "Apple One",
-      "Apple TV+",
-      "Apple Music",
-      "Apple Arcade",
-      "Apple Fitness+",
-      "Apple News+",
-      "Apple Podcasts",
-      "Apple Books",
-      "App Store",
-    ],
-    "Apple Wallet": ["Wallet", "Apple Card", "Apple Pay", "Apple Cash"],
   },
 
   term: {

@@ -11,7 +11,7 @@ const Directory = () => {
   };
 
   return (
-    <div className="grid-cols-2 md:space-x-4 md:grid-flow-col-dense md:grid">
+    <div className="lg:grid-cols-2 md:gap-x-2 md:grid-flow-col-dense md:grid md:px-6 gap-x-1 md:grid-cols-6">
       {arrayChunk(Object.keys(data.directories), 2).map((row, i) => (
         <div key={i} className="md:flex md:flex-col">
           {row.map((col: string, i: number) => (
