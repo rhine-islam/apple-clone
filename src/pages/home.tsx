@@ -1,7 +1,6 @@
 import Ad from "../components/ads/ad";
 import MainBanner from "../components/cards/banner/mainBanner";
-import CardOne from "../components/cards/productCards/cardOne";
-import CardTwo from "../components/cards/productCards/cardTwo";
+import Card from "../components/cards/productCards/card";
 import Carousel from "../components/carousel/carousel";
 import Directory from "../components/directories/directory";
 import Footer from "../components/footer/footer";
@@ -13,7 +12,6 @@ const Home = () => {
   return (
     <div>
       <Navbar theme="dark" />
-
       <div className="md:flex-col md:flex md:justify-center md:items-center">
         <Ad />
         <MainBanner
@@ -37,48 +35,66 @@ const Home = () => {
           desktopImg={images.banner3}
           mobileImg={images.mobileImg7}
         />
-        <div className="md:grid md:grid-cols-2 gap-x-2 md:p-2 ">
-          <CardOne
+        <div className="space-y-3 md:grid md:grid-cols-2 gap-x-2 md:p-2 md:gap-y-3 md:space-y-0">
+          <Card
             color="black"
-            message="Pro Beyond"
-            title="iPhone 12 Pro"
-            image={images.banner4}
+            message="Upgrade and save. It's that easy"
+            title="Trade In"
+            desktopImg={images.banner4}
+            mobileImg={images.mobileImg4}
+            position="top"
+            link="See what your device is worth"
           />
-          <CardTwo
+          <Card
             color="white"
-            message="Pro Beyond"
-            title="iPhone 12 Pro"
-            image={images.banner8}
+            message="Apple Worldwide Developer Conference"
+            title="WWDC23"
+            desktopImg={images.banner5}
+            mobileImg={images.mobileImg5}
+            position="bottom"
+            link="Learn More"
           />
-          <CardOne
+          <Card
             color="black"
-            message="Pro Beyond"
-            title="iPhone 12 Pro"
-            image={images.banner6}
+            message="Pride is in the air"
+            title="WATCH"
+            desktopImg={images.banner6}
+            mobileImg={images.mobileImg6}
+            position="top"
+            link="Shop the new Pride Edition Sport Band"
           />
-          <CardOne
+          <Card
             color="white"
-            message="Pro Beyond"
-            title="iPhone 12 Pro"
-            image={images.banner7}
+            message="Supercharged M2 Pro and M2 Max"
+            title="MacBook Pro"
+            desktopImg={images.banner7}
+            mobileImg={images.mobileImg7}
+            position="top"
+            link="Learn More"
           />
-          <CardOne
+          <Card
             color="white"
-            message="Pro Beyond"
-            title="iPhone 12 Pro"
-            image={images.banner5}
+            message="Privacy that is iPhone"
+            title="Your Health data in your control"
+            desktopImg={images.banner8}
+            mobileImg={images.mobileImg8}
+            position="top"
+            link="Learn More"
           />
-          <CardOne
+          <Card
             color="black"
-            message="Pro Beyond"
-            title="iPhone 12 Pro"
-            image={images.banner9}
+            message="Get upto 3% Daily Cash Back"
+            title="Card"
+            desktopImg={images.banner9}
+            mobileImg={images.mobileImg9}
+            position="top"
+            link="Learn More"
           />
         </div>
-        <Carousel />
-        <TextCard />
+        {/* <Carousel /> */}
+        {/* <TextCard />
         <Directory />
-        <Footer />
+        <Footer /> */}
       </div>
     </div>
   );

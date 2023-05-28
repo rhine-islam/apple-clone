@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const LinkBtn = ({ name, link }: any) => {
   return (
     <a className="flex items-center text-blue-400" href={link}>
-      <p className="text-base md:text-xl">{name}</p>
+      <p className="text-base lg:text-xl md:text-lg">{name}</p>
       <FontAwesomeIcon icon={faChevronRight} className="w-4 h-3 mt-1" />
     </a>
   );
