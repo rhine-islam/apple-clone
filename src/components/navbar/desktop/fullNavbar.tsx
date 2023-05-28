@@ -53,9 +53,9 @@ const FullNavbar = ({ navColor }: any) => {
           navColor === "dark" ? style.navBlack : style.navWhite
         }  py-3 hidden lg:block z-50 fixed md:block  ${
           open === true && navColor === "dark"
-            ? `animate-flip-down animate-ease-out ${style.navBlackSolid}`
+            ? `${style.navBlackSolid}`
             : open === true && navColor === "white"
-            ? `animate-flip-down animate-ease-out ${style.navWhiteSolid}`
+            ? ` ${style.navWhiteSolid}`
             : null
         }`}
       >

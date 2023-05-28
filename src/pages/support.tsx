@@ -9,22 +9,23 @@ import Privacy from "../components/support/privacy/privacy";
 import Search from "../components/support/search/search";
 import SupportCard from "../components/support/supportCard/supportCard";
 import LatestUpdate from "../components/support/update/latestUpdate";
+import images from "../components/utls/images";
 function Support() {
   return (
     <div>
       <Navbar theme="light" />
-      <Banner />
+      <Banner desktopImg={images.support1} mobileImg={images.supportMob1} />
       <AppleSupport />
       <Search />
-      <LatestUpdate />
-      <Privacy />
-      <SupportCard />
-      <MySupport />
-      <Guide />
-      <div className="flex flex-col md:items-center">
+      {/* <LatestUpdate /> */}
+      {/* <Privacy /> */}
+      {/* <SupportCard /> */}
+      {/* <MySupport /> */}
+      {/* <Guide /> */}
+      {/* <div className="flex flex-col md:items-center">
         <Directory />
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 }

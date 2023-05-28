@@ -24,7 +24,8 @@ const images = {
   banner10:
     "./assets/images/banner/hero_iphone14pro_spring__9xo85pm6sbmm_small_2x.jpg",
 
-  support1: "./assets/images/support/hero-banner-homepage.image.large_2x.jpg",
+  support1: "./assets/images/support/s1.jpg",
+  supportMob1: "./assets/images/support/sm1.jpg",
   support2: "./assets/images/support/image-grid-airpods_2x.png",
   support3: "./assets/images/support/image-grid-ipad_2x.png",
   support4: "./assets/images/support/image-grid-iphone_2x.png",
