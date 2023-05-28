@@ -23,7 +23,8 @@ const images = {
   banner7: "./assets/images/banner/promo_mbp__ek7p477bkp6q_large.jpg",
   banner8: "./assets/images/banner/promo_wwdc23__b68ptht3mro2_large.jpg",
   banner9: "./assets/images/banner/tile__cauwwcyyn9hy_large.jpg",
-
+  banner10:
+    "./assets/images/banner/hero_iphone14pro_spring__9xo85pm6sbmm_small_2x.jpg",
   support1: "./assets/images/support/hero-banner-homepage.image.large_2x.jpg",
   support2: "./assets/images/support/image-grid-airpods_2x.png",
   support3: "./assets/images/support/image-grid-ipad_2x.png",
@@ -41,6 +42,21 @@ const images = {
     "./assets/images/support/tile-feature-privacy-skills.image.large_2x.png",
   support13: "./assets/images/support/tile-split-getsupport.image.large_2x.png",
   support14: "./assets/images/support/tile-split-supportapp.image.large_2x.png",
+
+  mobileImg1:
+    "./assets/images/banner/mobile/hero_iphone14pro_spring__9xo85pm6sbmm_small_2x.jpg",
+  mobileImg2:
+    "./assets/images/banner/mobile/hero_iphone14_yellow__eun20sn4imi6_small_2x.jpg",
+  mobileImg3:
+    "./assets/images/banner/mobile/hero_ipadpro__bpt7a9d8sh42_small_2x.jpg",
+  mobileImg4:
+    "./assets/images/banner/mobile/iphone_tradein_promo__d5au3rkw5kuq_small_2x.jpg",
+  mobileImg5:
+    "./assets/images/banner/mobile/promo_pride23__cnpic94fthle_small_2x.jpg",
+  mobileImg6:
+    "./assets/images/banner/mobile/promo_wwdc23_swift__b3fev54l3bci_small_2x.jpg",
+  mobileImg7:
+    "./assets/images/banner/mobile/hero_apple_watch_series_8_spring__b1y8wb7xjc9y_largetall.jpg",
 };
 
 export default images;

@@ -1,8 +1,16 @@
+import { title } from "process";
 import React from "react";
-import LinkBtn from "../../buttons/linkBtn";
-import style from "../../../style/style";
+import LinkBtn from "../components/buttons/linkBtn";
+import style from "../style/style";
+import images from "../components/utls/images";
 
-const MainBanner = ({ color, message, title, desktopImg, mobileImg }: any) => {
+const Dev = ({
+  color = "white",
+  message = "Pro Beyond",
+  title = "iPhone 14 Pro",
+  desktopImg = images.banner1,
+  mobileImg = images.mobileImg1,
+}: any) => {
   return (
     <div className="relative flex justify-center ">
       <div className="overflow-hidden cursor-pointer md:w-[2560px] md:h-[692px] h-[500px] w-full select-none">
@@ -49,4 +57,4 @@ const MainBanner = ({ color, message, title, desktopImg, mobileImg }: any) => {
   );
 };
 
-export default MainBanner;
+export default Dev;

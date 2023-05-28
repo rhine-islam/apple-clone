@@ -20,19 +20,22 @@ const Home = () => {
           color="white"
           message="Pro Beyond"
           title="iPhone 14 Pro"
-          image={images.banner1}
+          desktopImg={images.banner1}
+          mobileImg={images.mobileImg1}
         />
         <MainBanner
           color="black"
           message="Pro Beyond"
           title="iPhone 13 Pro"
-          image={images.banner2}
+          desktopImg={images.banner2}
+          mobileImg={images.mobileImg2}
         />
         <MainBanner
           color="white"
           message="Pro Beyond"
           title="iPhone 12 Pro"
-          image={images.banner3}
+          desktopImg={images.banner3}
+          mobileImg={images.mobileImg7}
         />
         <div className="md:grid md:grid-cols-2 gap-x-2 md:p-2 ">
           <CardOne
