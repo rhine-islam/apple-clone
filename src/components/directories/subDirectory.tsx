@@ -10,7 +10,7 @@ const SubDirectory = ({ title }: any | string) => {
   return (
     <div className="px-12 py-4 md:px-1">
       <div className="">
-        <h1 className={style.txtBlackSmB}>{title} </h1>
+        <h1 className={`text-black text-xs font-medium`}>{title} </h1>
         {open === true ? (
           <button
             className="absolute visible -mt-4 right-16 md:hidden"
@@ -42,7 +42,7 @@ const SubDirectory = ({ title }: any | string) => {
             ? key[1].map((value: any, id: number) => {
                 return (
                   <p
-                    className="text-sm text-gray-700 text-start font-sf"
+                    className="text-xs text-gray-700 md:text-sm text-start font-sf"
                     key={id}
                   >
                     {value}

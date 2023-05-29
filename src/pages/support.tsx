@@ -13,7 +13,7 @@ import images from "../components/utls/images";
 function Support() {
   return (
     <div>
-      <Navbar theme="light" />
+      <Navbar theme="white" />
       <Banner desktopImg={images.support1} mobileImg={images.supportMob1} />
       <AppleSupport />
       <Search />

@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div>
       <Navbar theme="dark" />
-      <div className="md:flex-col md:flex md:justify-center md:items-center">
+      <div className="md:flex-col md:flex md:justify-center md:items-center ">
         <Ad />
         <MainBanner
           color="white"

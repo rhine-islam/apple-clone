@@ -8,6 +8,7 @@ const useStyles = createUseStyles({
   sliderContainer: {
     "& .slick-slide": {
       opacity: 0.6,
+      width: "1200px",
     },
     "& .slick-center": {
       opacity: 1,
@@ -39,9 +40,34 @@ const Carousel = () => {
     pauseOnHover: true,
     centerMode: true,
     centerPadding: "60px",
-    slidesToShow: 3,
+    slidesToShow: 2,
     speed: 1500,
+
     responsive: [
+      {
+        breakpoint: 1300,
+        settings: {
+          adaptiveHeight: true,
+          variableWidth: true,
+          className: "slider variable-width",
+          arrows: false,
+          centerMode: true,
+          centerPadding: "1px",
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 950,
+        settings: {
+          adaptiveHeight: true,
+          variableWidth: true,
+          className: "slider variable-width",
+          arrows: false,
+          centerMode: true,
+          centerPadding: "1px",
+          slidesToShow: 2,
+        },
+      },
       {
         breakpoint: 768,
         settings: {
@@ -63,18 +89,20 @@ const Carousel = () => {
     ],
   };
   return (
-    <div className="py-2 md:w-[920px] lg:w-[2560px]">
-      <Slider {...settings} className={classes.sliderContainer}>
-        {imageSrc.map((image: string, id: number) => {
-          return (
-            <ImageCard
-              message="Mystery Protect What You Have."
-              image={image}
-              color="white"
-            />
-          );
-        })}
-      </Slider>
+    <div className="container lg:max-h-[700px] md:max-h-[400px] md:max-w-[1000px] lg:max-w-[2500px] h-full border-2 border-red-500 w-full">
+      <div className="w-full h-[1200px]">
+        <Slider {...settings} className={classes.sliderContainer}>
+          {imageSrc.map((image: string, id: number) => {
+            return (
+              <ImageCard
+                message="Mystery Protect What You Have."
+                image={image}
+                color="white"
+              />
+            );
+          })}
+        </Slider>
+      </div>
     </div>
   );
 };

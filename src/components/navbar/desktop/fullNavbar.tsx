@@ -27,15 +27,6 @@ const FullNavbar = ({ navColor }: any) => {
     }
   });
 
-  // {
-  //   Object.entries(data.navs).map((key, id) =>
-  //     Object.entries(key[1]).map((data, id) => {
-  //       data[1].map((value, id) => {
-  //         console.log(data[0], value);
-  //       });
-  //     })
-  //   );
-  // }
 
   return (
     <>
@@ -59,7 +50,7 @@ const FullNavbar = ({ navColor }: any) => {
             : null
         }`}
       >
-        <ul className="flex items-center justify-center space-x-8 ">
+        <ul className="flex items-center justify-center lg:space-x-8 md:space-x-4">
           <Link to="/">
             <FontAwesomeIcon
               icon={faAppleWhole}

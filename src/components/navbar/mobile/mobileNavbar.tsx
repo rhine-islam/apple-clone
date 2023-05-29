@@ -14,10 +14,12 @@ const MobileNavbar = ({ navColor }: any) => {
 
   return (
     <nav
-      className={`w-full overscroll-auto  ${
-        navColor === "dark" ? "bg-black" : style.navWhite
+      className={`w-full ${
+        navColor === "dark" ? "bg-neutral-900 " : "bg-gray-200"
       } lg:hidden xl:hidden 2xl:hidden md:hidden ${
-        navbar ? "opacity-100 h-screen " : "opacity-50"
+        navbar
+          ? "opacity-100 h-screen fixed z-30 animate-flip-down animate-ease-out"
+          : "opacity-50 "
       }`}
     >
       <div className="px-4 mx-auto md:items-center md:flex md:px-8">

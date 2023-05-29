@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Ad = () => {
   return (
-    <div className="px-6 py-2 mt-1 lg:mt-14 md:mt-20">
+    <div className="px-6 py-2 lg:mt-14 md:mt-20">
       <p className="text-center ">
         Get $200–$630 in credit toward iPhone 14 or iPhone 14 Pro when you trade
         in iPhone 11 or higher.1{" "}
