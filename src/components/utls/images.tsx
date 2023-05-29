@@ -24,6 +24,7 @@ const images = {
   banner10:
     "./assets/images/banner/hero_iphone14pro_spring__9xo85pm6sbmm_small_2x.jpg",
 
+  //Support Page Images
   support1: "./assets/images/support/s1.jpg",
   supportMob1: "./assets/images/support/sm1.jpg",
   support2: "./assets/images/support/image-grid-airpods_2x.png",
@@ -52,6 +53,18 @@ const images = {
   mobileImg7: "./assets/images/banner/mobile/mb7.jpg",
   mobileImg8: "./assets/images/banner/mobile/mb8.jpg",
   mobileImg9: "./assets/images/banner/mobile/mb9.jpg",
+
+  // Developer Image
+  devImg1: "./assets/images/developer/d1.jpg",
+  devImg2: "./assets/images/developer/d2.png",
+  devImg3: "./assets/images/developer/d3.png",
+  devImg4: "./assets/images/developer/d4.png",
+  devImg5: "./assets/images/developer/d5.png",
+  devImg6: "./assets/images/developer/d6.png",
+  devImg7: "./assets/images/developer/d7.png",
+  devImg8: "./assets/images/developer/d8.png",
+  devImg9: "./assets/images/developer/dm1.jpg",
+  devImg10: "./assets/images/developer/dm2.png",
 };
 
 export default images;

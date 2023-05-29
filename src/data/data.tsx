@@ -424,6 +424,15 @@ const data = {
   //     ],
   //   },
   // },
+  devNavTitle: [
+    "News",
+    "Discover",
+    "Design",
+    "Develop",
+    "Distribute",
+    "Support",
+    "Account",
+  ],
 };
 
 export default data;
