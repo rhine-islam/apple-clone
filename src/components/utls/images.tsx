@@ -55,7 +55,7 @@ const images = {
   mobileImg9: "./assets/images/banner/mobile/mb9.jpg",
 
   // Developer Image
-  devImg1: "./assets/images/developer/d1.jpg",
+  devImg1: "./assets/images/developer/dm1.jpg",
   devImg2: "./assets/images/developer/d2.png",
   devImg3: "./assets/images/developer/d3.png",
   devImg4: "./assets/images/developer/d4.png",
@@ -63,8 +63,9 @@ const images = {
   devImg6: "./assets/images/developer/d6.png",
   devImg7: "./assets/images/developer/d7.png",
   devImg8: "./assets/images/developer/d8.png",
-  devImg9: "./assets/images/developer/dm1.jpg",
-  devImg10: "./assets/images/developer/dm2.png",
+  devImg9: "./assets/images/developer/dm2.png",
+  devImg10: "./assets/images/developer/d9.png",
+  devImg11: "./assets/images/developer/d10.png",
 };
 
 export default images;
