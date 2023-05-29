@@ -7,8 +7,14 @@ const MySupportCard1 = ({ title, description }: any) => {
   return (
     <div className="p-4 md:flex md:space-x-28 md:p-1">
       <div className="md:w-[500px] space-y-6 flex flex-col md:items-start justify-center items-center">
-        <h1 className={style.txtBlack5xlSB}>{title}</h1>
-        <p className={style.txtBlackXl}>{description}</p>
+        <h1
+          className={`text-black text-center font-semibold lg:text-5xl md:text-4xl text-3xl`}
+        >
+          {title}
+        </h1>
+        <p className={`${style.txtBlack} text-lg`}>
+          {description}
+        </p>
         <LinkBtn name="Learn More" />
       </div>
       <img

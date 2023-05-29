@@ -17,15 +17,15 @@ function Support() {
       <Banner desktopImg={images.support1} mobileImg={images.supportMob1} />
       <AppleSupport />
       <Search />
-      {/* <LatestUpdate /> */}
-      {/* <Privacy /> */}
-      {/* <SupportCard /> */}
-      {/* <MySupport /> */}
-      {/* <Guide /> */}
-      {/* <div className="flex flex-col md:items-center">
+      <LatestUpdate />
+      <Privacy />
+      <SupportCard />
+      <MySupport />
+      <Guide />
+      <div className="flex flex-col md:items-center">
         <Directory />
         <Footer />
-      </div> */}
+      </div>
     </div>
   );
 }

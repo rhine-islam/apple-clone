@@ -7,7 +7,7 @@ const Search = () => {
   return (
     <section className="flex flex-col items-center py-12 space-y-12">
       <h1
-        className={`text-black text-center font-semibold lg:text-5xl md:text-4xl text-2xl`}
+        className={`text-black text-center font-semibold lg:text-5xl md:text-4xl text-3xl`}
       >
         Search for more topics
       </h1>

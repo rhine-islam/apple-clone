@@ -10,13 +10,21 @@ const Guide = () => {
     <div className="flex justify-center">
       <div className="grid md:grid-cols-3 md:w-[1100px] gap-12 p-8">
         <div className="space-y-8 md:col-span-2">
-          <h1 className={style.txtBlack2xlB}>{data.guide?.[1].title}</h1>
-          <p className={style.txtBlackLg}>{data.guide?.[1].description}</p>
+          <h1 className={`text-black md:text-2xl font-bold text-lg`}>
+            {data.guide?.[1].title}
+          </h1>
+          <p className={`text-black  md:text-lg text-sm`}>
+            {data.guide?.[1].description}
+          </p>
         </div>
         <div className="space-y-8 ">
           <GiftIcon />
-          <h1 className={style.txtBlack2xlB}>{data.guide?.[2].title}</h1>
-          <p className={style.txtBlackLg}>{data.guide?.[2].description}</p>
+          <h1 className={`text-black md:text-2xl font-bold text-lg`}>
+            {data.guide?.[2].title}
+          </h1>
+          <p className={`text-black  md:text-lg text-sm`}>
+            {data.guide?.[2].description}
+          </p>
           <LinkBtn name="Learn more" />
         </div>
         <div className="md:col-span-2">

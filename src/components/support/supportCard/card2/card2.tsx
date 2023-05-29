@@ -6,11 +6,13 @@ import data from "../../../../data/data";
 
 const Card2 = () => {
   return (
-    <section className="flex flex-col items-center py-12 space-y-6">
-      <h1 className={`${style.txtBlack5xlSB} text-center`}>
+    <section className="flex flex-col items-center py-12 space-y-4">
+      <h1
+        className={`text-black text-center font-semibold lg:text-5xl md:text-4xl text-3xl`}
+      >
         {data.support?.[2].title}
       </h1>
-      <p className={`${style.txtBlack} text-lg`}>
+      <p className={`${style.txtBlack} text-lg md:px-8 lg:px-3 px-10`}>
         {data.support?.[2].description}
       </p>
       <LinkBtn name=" Download" />
