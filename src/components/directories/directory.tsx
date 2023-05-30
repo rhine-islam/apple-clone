@@ -2,7 +2,7 @@ import React from "react";
 import SubDirectory from "./subDirectory";
 import data from "../../data/data";
 
-const Directory = () => {
+const Directory = ({ color }: any) => {
   const arrayChunk = (arr: any, n: number) => {
     const array = arr.slice();
     const chunks = [];
@@ -16,7 +16,7 @@ const Directory = () => {
         <div key={i} className="md:flex md:flex-col">
           {row.map((col: string, i: number) => (
             <div className="">
-              <SubDirectory title={col} key={i} />
+              <SubDirectory title={col} key={i} color={color} />
             </div>
           ))}
         </div>

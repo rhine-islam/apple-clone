@@ -93,8 +93,8 @@ const Home = () => {
         </div>
         {/* <Carousel /> */}
         <TextCard />
-        <Directory />
-        <Footer />
+        <Directory color="dark" />
+        <Footer color="dark" />
       </div>
     </div>
   );

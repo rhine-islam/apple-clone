@@ -23,8 +23,8 @@ function Support() {
       <MySupport />
       <Guide />
       <div className="flex flex-col md:items-center">
-        <Directory />
-        <Footer />
+        <Directory color="dark" />
+        <Footer color="dark" />
       </div>
     </div>
   );
