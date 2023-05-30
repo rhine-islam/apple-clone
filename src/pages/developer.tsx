@@ -28,7 +28,7 @@ const Developer = ({ theme }: any) => {
       }`}
     >
       <DevNavbar />
-      <DevCard
+      {/* <DevCard
         title="WWDC23"
         content="Get ready for June 5 at 10 a.m. PT. See Whats ahead"
         image={images.devImg1}
@@ -173,7 +173,7 @@ const Developer = ({ theme }: any) => {
           String(theme).toUpperCase() === "DARK" ? "bg-zinc-900" : "bg-white"
         }
         color={color}
-      />
+      /> */}
     </div>
   );
 };
