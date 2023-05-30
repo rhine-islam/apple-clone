@@ -10,7 +10,7 @@ interface Props {
 }
 const MiniCard = ({ title, content, color, children, link }: Props) => {
   return (
-    <div className="flex flex-col items-center py-2">
+    <div className="flex flex-col items-center py-2 space-y-2">
       {children}
       <p
         className={`font-semibold text-lg ${

@@ -10,9 +10,9 @@ import Footer from "../../footer/footer";
 
 const ContainerCard = ({ bgColor, color }: any) => {
   return (
-    <div className={`${bgColor} flex flex-col  md:items-center`}>
+    <div className={`${bgColor} flex flex-col  md:items-center mt-2`}>
       <div
-        className={`flex justify-center flex-col items-center py-12 mt-2 space-y-16  `}
+        className={`flex justify-center flex-col items-center py-12  space-y-16  `}
       >
         <div className="grid items-center grid-cols-2 gap-10 md:gap-20 lg:grid-cols-4 md:grid-cols-2">
           <MiniCard
@@ -20,7 +20,7 @@ const ContainerCard = ({ bgColor, color }: any) => {
             content={
               "Get the latest SDKs and beta operating systems for all Apple platforms."
             }
-            color={"white"}
+            color={color}
             link={"Download resources"}
           >
             {" "}
@@ -31,7 +31,7 @@ const ContainerCard = ({ bgColor, color }: any) => {
             content={
               "Browse the latest documentation including API reference, articles, and sample code."
             }
-            color={"white"}
+            color={color}
             link={"Read documentation"}
           >
             {" "}
@@ -42,7 +42,7 @@ const ContainerCard = ({ bgColor, color }: any) => {
             content={
               "Learn about the latest technologies presented at Apple developer events."
             }
-            color={"white"}
+            color={color}
             link={"Watch videos"}
           >
             {" "}
@@ -53,7 +53,7 @@ const ContainerCard = ({ bgColor, color }: any) => {
             content={
               "Ask questions and discuss development topics with Apple engineers and other developers."
             }
-            color={"white"}
+            color={color}
             link={"View forums"}
           >
             {" "}
@@ -69,8 +69,8 @@ const ContainerCard = ({ bgColor, color }: any) => {
         />
       </div>
 
-      <Directory color="white" />
-      <Footer color="white" />
+      <Directory color={color} />
+      <Footer color={color} />
     </div>
   );
 };

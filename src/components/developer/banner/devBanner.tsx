@@ -55,7 +55,7 @@ const DevBanner = ({
               {title}
             </h1>
             <p
-              className={`md:max-w-[780px] w-full lg:text-xl md:text-lg text-sm font-normal text-center ${
+              className={`md:max-w-[780px] w-full lg:text-xl md:text-lg text-sm font-normal text-center md:pb-8 pb-4 ${
                 String(color).toUpperCase() === "WHITE"
                   ? "text-white"
                   : "text-black"

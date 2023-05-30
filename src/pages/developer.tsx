@@ -1,4 +1,3 @@
-import React from "react";
 import DevNavbar from "../components/developer/navbar/devNavbar";
 import DevCard from "../components/developer/card/devCard";
 import images from "../components/utls/images";
@@ -11,16 +10,29 @@ import WatchOsIcon from "../components/icons/watchOsIcon";
 import MembersIcons from "../components/icons/membersIcons";
 import MiniCard from "../components/developer/card/miniCard";
 import ContainerCard from "../components/developer/card/containerCard";
+import { useEffect, useState } from "react";
 
-const Developer = () => {
+const Developer = ({ theme }: any) => {
+  const [color, setColor] = useState("");
+  useEffect(() => {
+    if (String(theme).toUpperCase() === "DARK") {
+      setColor("white");
+    } else {
+      setColor("dark");
+    }
+  });
   return (
-    <div className="bg-black">
+    <div
+      className={`${
+        String(theme).toUpperCase() === "DARK" ? "bg-black" : "bg-white"
+      }`}
+    >
       <DevNavbar />
       <DevCard
         title="WWDC23"
         content="Get ready for June 5 at 10 a.m. PT. See Whats ahead"
         image={images.devImg1}
-        color="white"
+        color={"white"}
         bgColor="bg-black"
         heading={true}
         position="bottom"
@@ -30,7 +42,7 @@ const Developer = () => {
           title="Latest videos"
           content="TestFlight , Privacy, MapKit & more"
           image={images.devImg10}
-          color="white"
+          color={"white"}
           bgColor="bg-gradient-to-r from-indigo-400 via-indigo-600 to-indigo-600"
           heading={false}
           position="top"
@@ -39,7 +51,7 @@ const Developer = () => {
           title="Xcode Cloud"
           content="Take Advantage of continuous integration & delivery, right in Xcode."
           image={images.devImg11}
-          color="white"
+          color={"white"}
           bgColor="bg-gradient-to-br from-sky-700 via-sky-700 to-cyan-400"
           heading={false}
           position="top"
@@ -48,8 +60,12 @@ const Developer = () => {
           title="IOS 16"
           content=""
           image={images.devImg3}
-          color="white"
-          bgColor="bg-neutral-900"
+          color={color}
+          bgColor={
+            String(theme).toUpperCase() === "DARK"
+              ? "bg-neutral-900"
+              : "bg-white"
+          }
           heading={false}
           position="top"
         />
@@ -57,8 +73,12 @@ const Developer = () => {
           title="iPadOS 16"
           content=""
           image={images.devImg4}
-          color="white"
-          bgColor="bg-neutral-900"
+          color={color}
+          bgColor={
+            String(theme).toUpperCase() === "DARK"
+              ? "bg-neutral-900"
+              : "bg-white"
+          }
           heading={false}
           position="top"
         />
@@ -66,8 +86,12 @@ const Developer = () => {
           title="macOS Ventura"
           content=""
           image={images.devImg5}
-          color="white"
-          bgColor="bg-neutral-900"
+          color={color}
+          bgColor={
+            String(theme).toUpperCase() === "DARK"
+              ? "bg-neutral-900"
+              : "bg-white"
+          }
           heading={false}
           position="top"
         />
@@ -75,8 +99,12 @@ const Developer = () => {
           title="watchOS 9"
           content=""
           image={images.devImg6}
-          color="white"
-          bgColor="bg-neutral-900"
+          color={color}
+          bgColor={
+            String(theme).toUpperCase() === "DARK"
+              ? "bg-neutral-900"
+              : "bg-white"
+          }
           heading={false}
           position="top"
         />
@@ -140,7 +168,12 @@ const Developer = () => {
           <MembersIcons />
         </div>
       </DevBanner>
-      <ContainerCard bgColor="bg-zinc-900" />
+      <ContainerCard
+        bgColor={
+          String(theme).toUpperCase() === "DARK" ? "bg-zinc-900" : "bg-white"
+        }
+        color={color}
+      />
     </div>
   );
 };
