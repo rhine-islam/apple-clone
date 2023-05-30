@@ -27,7 +27,6 @@ const FullNavbar = ({ navColor }: any) => {
     }
   });
 
-
   return (
     <>
       {open ? (
@@ -70,7 +69,7 @@ const FullNavbar = ({ navColor }: any) => {
                 }}
                 key={id}
               >
-                {name === "Support" ? <Link to="/support">{name}</Link> : name}
+                <Link to={`/${String(name).toLowerCase()}`}>{name}</Link>
               </li>
             );
           })}

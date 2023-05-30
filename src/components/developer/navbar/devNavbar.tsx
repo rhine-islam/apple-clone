@@ -1,12 +1,12 @@
-import { faXmark, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
-import data from '../../../data/data';
-import style from '../../../style/style';
-import BarTwoIcon from '../../icons/barTwoIcon';
-import DeveloperIcon from '../../icons/developerIcon';
-import SearchIcon from '../../icons/searchIcon';
+import { faXmark, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import data from "../../../data/data";
+import style from "../../../style/style";
+import BarTwoIcon from "../../icons/barTwoIcon";
+import DeveloperIcon from "../../icons/developerIcon";
+import SearchIcon from "../../icons/searchIcon";
 
 const DevNavbar = ({ navColor = "dark" }: any) => {
   const [navbar, setNavbar] = useState(false);
@@ -72,7 +72,7 @@ const DevNavbar = ({ navColor = "dark" }: any) => {
                   </div>
                 </div>
               )}
-              <Link to="/developer">
+              <Link to="/">
                 <DeveloperIcon
                   color={navColor === "white" ? "dark" : "white"}
                 />
@@ -115,11 +115,7 @@ const DevNavbar = ({ navColor = "dark" }: any) => {
                       }`}
                       key={id}
                     >
-                      {name === "Support" ? (
-                        <Link to="/support">{name}</Link>
-                      ) : (
-                        <Link to="#">{name}</Link>
-                      )}
+                      <Link to={`/${String(name).toLowerCase()}`}>{name}</Link>
                       <hr
                         className={`w-full pb-2 mt-2 border-gray-700 ${
                           navColor === "dark"
@@ -139,4 +135,4 @@ const DevNavbar = ({ navColor = "dark" }: any) => {
   );
 };
 
-export default DevNavbar
+export default DevNavbar;

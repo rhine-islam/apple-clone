@@ -8,6 +8,7 @@ import SearchIcon from "../../icons/searchIcon";
 import CartIcon from "../../icons/cartIcon";
 import style from "../../../style/style";
 import { Link } from "react-router-dom";
+import data from "../../../data/data";
 
 const MobileNavbar = ({ navColor }: any) => {
   const [navbar, setNavbar] = useState(false);
@@ -57,17 +58,9 @@ const MobileNavbar = ({ navColor }: any) => {
             }`}
           >
             <ul className="items-center justify-center pl-8 space-y-6 md:flex md:space-x-6 md:space-y-0">
-              <MenuLink name="Store" navbar={navbar} color={navColor} />
-              <MenuLink name="Mac" navbar={navbar} color={navColor} />
-              <MenuLink name="iPad" navbar={navbar} color={navColor} />
-              <MenuLink name="iPhone" navbar={navbar} color={navColor} />
-              <MenuLink name="Watch" navbar={navbar} color={navColor} />
-              <MenuLink name="AirPods" navbar={navbar} color={navColor} />
-              <MenuLink name="TV & Home" navbar={navbar} color={navColor} />
-              <MenuLink name="Entertainment" navbar={navbar} color={navColor} />
-              <MenuLink name="Accessories" navbar={navbar} color={navColor} />
-
-              <MenuLink name="Support" navbar={navbar} color={navColor} />
+              {Object.keys(data.navs).map((name: string, id: number) => (
+                <MenuLink name={name} navbar={navbar} color={navColor} />
+              ))}
             </ul>
           </div>
         </div>

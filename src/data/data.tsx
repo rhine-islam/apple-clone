@@ -1,16 +1,4 @@
 const data = {
-  navNames: [
-    "Store",
-    "Mac",
-    "iPad",
-    "iPhone",
-    "Watch",
-    "AirPods",
-    "TV & Home",
-    "Entertainment",
-    "Accessories",
-    "Support",
-  ],
   navs: {
     Store: {
       Shop: [
@@ -220,6 +208,7 @@ const data = {
         "Accessibility",
       ],
     },
+    Developer: {},
   },
 
   directories: {

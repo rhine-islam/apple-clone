@@ -21,7 +21,7 @@ const MenuLink = ({ name, navbar, color }: any) => {
         onMouseOver={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}
       >
-        {name === "Support" ? <Link to="/support">{name}</Link> : name}
+        <Link to={`/${String(name).toLowerCase()}`}>{name}</Link>
       </a>
       {navbar === true && open === true ? (
         <ArrowRightIcon color={color} />
