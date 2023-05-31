@@ -17,14 +17,14 @@ const CarouselCard = ({
   autoSlideDuration,
 }: Props) => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  let index;
+
   const prev = () =>
     setCurrentSlide((currentSlide) =>
       currentSlide === 0 ? slides.length - 1 : currentSlide - 1
     );
   const next = () =>
     setCurrentSlide((currentSlide) =>
-      currentSlide === slides.length - 1 ? 0 : currentSlide + 1
+      currentSlide === slides.length - 2 ? 0 : currentSlide + 1
     );
 
   useEffect(() => {
@@ -36,10 +36,12 @@ const CarouselCard = ({
   return (
     <div className="relative overflow-hidden">
       <div
-        className={`flex transition-transform duration-700 ease-out `}
+        className={`flex transition-transform duration-700 ease-out`}
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
       >
-        {slides}
+        {slides !== "" || slides !== "undefined" || slides !== null
+          ? slides
+          : "NO IMAGE TO SHOW"}
       </div>
       <div className="absolute inset-0 flex items-center justify-between ">
         <FontAwesomeIcon

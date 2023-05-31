@@ -30,54 +30,24 @@ const mobImageSrc = [
 
 const Dev = () => {
   return (
-    <>
-      {/* <div className="flex justify-center ">
-        <div className="absolute z-10 justify-center hidden py-3 md:flex md:max-w-6xl">
-          <CarouselCard autoSlide={true} autoSlideDuration={4000}>
+    <div className="max-w-[2200px] absolute left-0 right-0 m-auto">
+      <div className="flex items-center justify-center">
+        <div className="justify-center hidden py-3 md:flex md:max-w-full">
+          <CarouselCard autoSlide={false} autoSlideDuration={4000}>
             {imageSrc.map((image: any, index: number) => (
-              <img
-                src={image}
-                className="md:object-cover h-[440px] md:h-full"
-              />
+              <img src={image} className="md:object-cover" />
             ))}
           </CarouselCard>
         </div>
         <div className="flex justify-center max-w-lg py-3 sm:max-w-2xl md:hidden">
           <CarouselCard autoSlide={false} autoSlideDuration={4000}>
             {mobImageSrc.map((image: any, index: number) => (
-              <img
-                src={image}
-                className="md:object-cover h-[440px] md:h-full"
-              />
+              <img src={image} className="object-cover h-[400px]" />
             ))}
           </CarouselCard>
         </div>
-      </div> */}
-      <div className="flex items-center justify-center p-16">
-        <div className="w-[2500px] px-8 py-4 bg-gray-700 rounded">
-          <div className="hidden md:block">
-            <CarouselCard autoSlide={true} autoSlideDuration={4000}>
-              {imageSrc.map((image: any, index: number) => (
-                <img
-                  src={image}
-                  className="md:object-cover h-[440px] md:h-full"
-                />
-              ))}
-            </CarouselCard>
-          </div>
-          <div className="flex justify-center max-w-lg py-3 sm:max-w-2xl md:hidden">
-            <CarouselCard autoSlide={false} autoSlideDuration={4000}>
-              {mobImageSrc.map((image: any, index: number) => (
-                <img
-                  src={image}
-                  className="md:object-cover h-[440px] md:h-full"
-                />
-              ))}
-            </CarouselCard>
-          </div>
-        </div>
       </div>
-    </>
+    </div>
   );
 };
 
