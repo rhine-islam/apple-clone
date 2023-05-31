@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
 import Support from "./pages/support";
-import Dev from "./pages/dev";
+import Dev from "./pages/dev/dev";
 import Developer from "./pages/developer";
 import { useState, useEffect } from "react";
 

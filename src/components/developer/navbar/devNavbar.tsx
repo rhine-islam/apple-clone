@@ -20,7 +20,7 @@ const DevNavbar = ({ navColor = "dark" }: any) => {
         }   hidden lg:block z-50 fixed md:block`}
       >
         <ul className="flex items-center justify-center lg:space-x-20 md:space-x-8">
-          <Link to="/developer">
+          <Link to="/">
             <DeveloperIcon color={navColor === "white" ? "dark" : "white"} />
           </Link>
 

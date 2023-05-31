@@ -37,7 +37,7 @@ const Developer = ({ theme }: any) => {
         heading={true}
         position="bottom"
       />
-      {/* <div className="grid gap-2 pt-2 md:grid-cols-2 md:px-2">
+      <div className="grid gap-2 pt-2 md:grid-cols-2 md:px-2">
         <DevCard
           title="Latest videos"
           content="TestFlight , Privacy, MapKit & more"
@@ -173,7 +173,7 @@ const Developer = ({ theme }: any) => {
           String(theme).toUpperCase() === "DARK" ? "bg-zinc-900" : "bg-white"
         }
         color={color}
-      /> */}
+      />
     </div>
   );
 };

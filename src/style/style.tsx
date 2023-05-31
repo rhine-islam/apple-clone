@@ -17,7 +17,7 @@ const style = {
   txtBlackLg: "text-black text-lg font-sf",
   navBackdropBlack: "fixed z-30 w-screen h-screen backdrop-blur-lg bg-black/70",
   navBackdropWhite:
-    "absolute z-30 w-screen h-screen backdrop-blur-lg bg-white/70 ",
+    "fixed z-30 w-screen h-screen backdrop-blur-lg bg-white/70 ",
   txtGrayXs: "text-xs text-gray-700 text-justify font-sf",
   navWhite: "backdrop-blur-lg bg-white/70 shadow-xl ",
   navBlack: "backdrop-blur-lg bg-black/40 ",

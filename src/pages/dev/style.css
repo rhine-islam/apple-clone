@@ -1,0 +1,10 @@
+/* max-width constrains the width of our carousel to 550, but shrinks on small devices */
+.carousel__container {
+  margin: auto;
+  background-color: black;
+}
+
+/* gives us the illusion of a "centered" slide */
+.activeSlide {
+  opacity: 1;
+}

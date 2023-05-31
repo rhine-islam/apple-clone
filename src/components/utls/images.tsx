@@ -1,16 +1,4 @@
 const images = {
-  image1: "./assets/images/banner/1250x703.jpg",
-  image2: "./assets/images/banner/1250x703--0Ggdie.jpg",
-  image3: "./assets/images/banner/1250x703--34nXUu.jpg",
-  image4: "./assets/images/banner/1250x703--CewAWe.jpg",
-  image5: "./assets/images/banner/1250x703--DjKX6r.jpg",
-  image6: "./assets/images/banner/1250x703--FKjTnV.jpg",
-  image7: "./assets/images/banner/1250x703--oe6qiL.jpg",
-  image8: "./assets/images/banner/1250x703--pSYHXc.jpg",
-  image9: "./assets/images/banner/1250x703--rdU3fH.jpg",
-  image10: "./assets/images/banner/1250x703--SFTM2J.jpg",
-  image11: "./assets/images/banner/fnb__brvfy48gzsz6_xlarge.jpg",
-
   banner1: "./assets/images/banner/b1.jpg",
   banner2: "./assets/images/banner/b2.jpg",
   banner3: "./assets/images/banner/b3.jpg",
@@ -66,6 +54,31 @@ const images = {
   devImg9: "./assets/images/developer/dm2.png",
   devImg10: "./assets/images/developer/d9.png",
   devImg11: "./assets/images/developer/d10.png",
+
+  //Carousel Images
+  image1: "./assets/images/banner/1250x703.jpg",
+  image2: "./assets/images/banner/1250x703--0Ggdie.jpg",
+  image3: "./assets/images/banner/1250x703--34nXUu.jpg",
+  image4: "./assets/images/banner/1250x703--CewAWe.jpg",
+  image5: "./assets/images/banner/1250x703--DjKX6r.jpg",
+  image6: "./assets/images/banner/1250x703--FKjTnV.jpg",
+  image7: "./assets/images/banner/1250x703--oe6qiL.jpg",
+  image8: "./assets/images/banner/1250x703--pSYHXc.jpg",
+  image9: "./assets/images/banner/1250x703--rdU3fH.jpg",
+  image10: "./assets/images/banner/1250x703--SFTM2J.jpg",
+  image11: "./assets/images/banner/fnb__brvfy48gzsz6_xlarge.jpg",
+
+  mobCarouselImg1: "./assets/images/carouselMobile/1 (1).jpg",
+  mobCarouselImg2: "./assets/images/carouselMobile/1 (2).jpg",
+  mobCarouselImg3: "./assets/images/carouselMobile/1 (3).jpg",
+  mobCarouselImg4: "./assets/images/carouselMobile/1 (4).jpg",
+  mobCarouselImg5: "./assets/images/carouselMobile/1 (5).jpg",
+  mobCarouselImg6: "./assets/images/carouselMobile/1 (6).jpg",
+  mobCarouselImg7: "./assets/images/carouselMobile/1 (7).jpg",
+  mobCarouselImg8: "./assets/images/carouselMobile/1 (8).jpg",
+  mobCarouselImg9: "./assets/images/carouselMobile/1 (9).jpg",
+  mobCarouselImg10: "./assets/images/carouselMobile/1 (10).jpg",
+  mobCarouselImg11: "./assets/images/carouselMobile/1 (11).jpg",
 };
 
 export default images;
