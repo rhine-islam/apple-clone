@@ -89,7 +89,7 @@ const Carousel = () => {
     ],
   };
   return (
-    <div className="container lg:max-h-[700px] md:max-h-[400px] md:max-w-[1000px] lg:max-w-[2500px] h-full border-2 border-red-500 w-full">
+    <div className="container lg:max-h-[700px] md:max-h-[400px] md:max-w-[1000px] lg:max-w-[2500px] h-full  w-full">
       <div className="w-full h-[1200px]">
         <Slider {...settings} className={classes.sliderContainer}>
           {imageSrc.map((image: string, id: number) => {
