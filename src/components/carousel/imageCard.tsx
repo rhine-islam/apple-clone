@@ -5,7 +5,7 @@ const ImageCard = ({ message, fullImage, mobileImage, color }: any) => {
   return (
     <div className="relative">
       <img
-        className="hidden object-cover md:w-full lg:h-[712px] md:h-[450px] md:block z-0"
+        className="hidden object-cover md:w-full lg:h-[700px] md:h-[450px] md:block z-0 md:px-1"
         src={fullImage}
         alt={fullImage}
       />
