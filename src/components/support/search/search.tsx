@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Search = () => {
   return (
-    <section className="flex flex-col items-center py-12 space-y-12">
+    <section className="flex flex-col items-center py-12 space-y-12 ">
       <h1
         className={`text-black text-center font-semibold lg:text-5xl md:text-4xl text-3xl`}
       >
@@ -13,7 +13,7 @@ const Search = () => {
       </h1>
       <div>
         <div className="md:flex">
-          <div className="p-3 ">
+          <div className="p-3">
             <div className="relative">
               <FontAwesomeIcon
                 icon={faMagnifyingGlass}
@@ -21,7 +21,7 @@ const Search = () => {
               />
               <input
                 type="text"
-                className="bg-white border rounded-lg  h-14 focus:outline-none focus:ring focus:ring-blue-300 hover:cursor-pointer xl:w-[1300px] lg:w-[1000px] px-12 md:w-[800px] w-[500px]"
+                className="bg-white border rounded-lg  h-14 focus:outline-none focus:ring focus:ring-blue-300 hover:cursor-pointer xl:w-[1300px] lg:w-[1000px] px-12 md:w-[800px] w-[350px]"
                 name=""
                 placeholder="Search Support"
               />
