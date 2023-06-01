@@ -1,3 +1,5 @@
+import images from "../components/utls/images";
+
 const data = {
   navs: {
     Store: {
@@ -388,31 +390,6 @@ const data = {
     ],
   },
 
-  // navs: {
-  //   Store: {
-  //     Shop: [
-  //       "Shop the Latest",
-  //       "Mac",
-  //       "iPad",
-  //       "iPhone",
-  //       "Apple Watch",
-  //       "Accessories",
-  //     ],
-  //     "Quick Links": [
-  //       "Find a Store",
-  //       "Order Status",
-  //       "Apple Trade In",
-  //       "Financing",
-  //     ],
-  //     "Shop Special Stores": [
-  //       "Certified Refurbished",
-  //       "Education",
-  //       "Business",
-  //       "Vererans and Military",
-  //       "Government",
-  //     ],
-  //   },
-  // },
   devNavTitle: [
     "News",
     "Discover",
@@ -421,6 +398,75 @@ const data = {
     "Distribute",
     "Support",
     "Account",
+  ],
+
+  carousel: [
+    {
+      message: " It’s not you. It’s her.",
+      fullImage: images.image1,
+      mobileImage: images.mobCarouselImg1,
+      color: "white",
+    },
+    {
+      message: " It’s not you. It’s her.",
+      fullImage: images.image2,
+      mobileImage: images.mobCarouselImg2,
+      color: "white",
+    },
+    {
+      message: " It’s not you. It’s her.",
+      fullImage: images.image3,
+      mobileImage: images.mobCarouselImg3,
+      color: "white",
+    },
+    {
+      message: " It’s not you. It’s her.",
+      fullImage: images.image4,
+      mobileImage: images.mobCarouselImg4,
+      color: "white",
+    },
+    {
+      message: " It’s not you. It’s her.",
+      fullImage: images.image5,
+      mobileImage: images.mobCarouselImg5,
+      color: "white",
+    },
+    {
+      message: " It’s not you. It’s her.",
+      fullImage: images.image6,
+      mobileImage: images.mobCarouselImg6,
+      color: "white",
+    },
+    {
+      message: " It’s not you. It’s her.",
+      fullImage: images.image7,
+      mobileImage: images.mobCarouselImg7,
+      color: "white",
+    },
+    {
+      message: " It’s not you. It’s her.",
+      fullImage: images.image8,
+      mobileImage: images.mobCarouselImg8,
+      color: "white",
+    },
+    {
+      message: " It’s not you. It’s her.",
+      fullImage: images.image9,
+      mobileImage: images.mobCarouselImg9,
+      color: "white",
+    },
+    {
+      message: " It’s not you. It’s her.",
+      fullImage: images.image10,
+      mobileImage: images.mobCarouselImg10,
+      color: "white",
+    },
+    {
+      message: " It’s not you. It’s her.",
+      fullImage: images.image11,
+      mobileImage: images.mobCarouselImg11,
+      color: "white",
+    },
   ],
 };
 

@@ -1,0 +1,6 @@
+li.BrainhubCarouselItem--active > div > div.stream {
+  visibility: visible;
+}
+.stream {
+  visibility: hidden;
+}

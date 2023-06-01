@@ -1,0 +1,6 @@
+.BrainhubCarouselItem {
+  opacity: 0.7;
+}
+.BrainhubCarouselItem--active {
+  opacity: 1;
+}

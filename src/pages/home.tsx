@@ -1,12 +1,13 @@
 import Ad from "../components/ads/ad";
 import MainBanner from "../components/cards/banner/mainBanner";
 import Card from "../components/cards/productCards/card";
-import Carousel from "../components/carousel/carousel";
+import Carousel from "../components/carousel/carouselCard";
 import Directory from "../components/directories/directory";
 import Footer from "../components/footer/footer";
 import TextCard from "../components/textCard/textCard";
 import images from "../components/utls/images";
 import Navbar from "../components/navbar/navbar";
+import CarouselCard from "../components/carousel/carouselCard";
 
 const Home = () => {
   return (
@@ -91,7 +92,7 @@ const Home = () => {
             link="Learn More"
           />
         </div>
-        {/* <Carousel /> */}
+        <CarouselCard color="white" />
         <TextCard />
         <Directory color="dark" />
         <Footer color="dark" />
