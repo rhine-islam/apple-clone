@@ -1,4 +1,4 @@
-import FlipCard from "../../components/flipCard/flipCard";
+import FlipAnimation from "../../components/flipAnimation/flipAnimation";
 import images from "../../components/utls/images";
 
 const Dev = () => {
@@ -7,39 +7,43 @@ const Dev = () => {
   return (
     <div>
       <div className="flex mt-12 space-x-24">
-        <FlipCard
+        <FlipAnimation
           rightToLeft={false}
           leftToRight={true}
           topToBottom={false}
           bottomToTop={false}
           componentFront={
             <img
-              className="object-cover w-96 h-[500px] rounded-lg shadow-xl shadow-black/50 "
               src={images.mobileImg1}
+              alt="Something"
+              className="w-[380px] h-[500px] rounded-2xl"
             />
           }
           componentBack={
             <img
-              className="object-cover w-80 h-[500px] rounded-xl"
-              src={images.mobileImg2}
+              src={images.mobileImg3}
+              alt="Something"
+              className="w-[380px] h-[500px] "
             />
           }
         />
-        <FlipCard
+        <FlipAnimation
           rightToLeft={false}
-          leftToRight={false}
+          leftToRight={true}
           topToBottom={false}
-          bottomToTop={true}
+          bottomToTop={false}
           componentFront={
             <img
-              className="object-cover w-96 h-[500px] rounded-lg shadow-xl shadow-black/50 "
               src={images.mobileImg1}
+              alt="Something"
+              className="w-[380px] h-[500px] rounded-2xl"
             />
           }
           componentBack={
             <img
-              className="object-cover w-80 h-[500px] rounded-xl"
-              src={images.mobileImg2}
+              src={images.mobileImg3}
+              alt="Something"
+              className="w-[380px] h-[500px] "
             />
           }
         />

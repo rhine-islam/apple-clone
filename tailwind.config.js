@@ -1,4 +1,31 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require("tailwindcss/plugin");
+
+const FlipClass = plugin(function ({ addUtilities }) {
+  addUtilities({
+    ".leftToRight": {
+      transform: "rotateY(180deg)",
+    },
+    ".rightToLeft": {
+      transform: "rotateY(-180deg)",
+    },
+    ".topToBottom": {
+      transform: "rotateX(-180deg)",
+    },
+    ".bottomToTop": {
+      transform: "rotateX(180deg)",
+    },
+    ".preserve-3d": {
+      transformStyle: "preserve-3d",
+    },
+    ".perspective": {
+      perspective: "8000px",
+    },
+    ".backface-hidden": {
+      backfaceVisibility: "hidden",
+    },
+  });
+});
 
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -21,5 +48,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animated")],
+  plugins: [require("tailwindcss-animated"), FlipClass],
 };
