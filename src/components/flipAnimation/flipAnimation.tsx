@@ -34,7 +34,7 @@ const FlipAnimation = ({
         }`}
       >
         <div
-          className={`  w-full h-full duration-1000 preserve-3d shadow-lg shadow-black/60 rounded-2xl  ${
+          className={`  w-full h-full duration-[1500ms] preserve-3d shadow-lg shadow-black/60 rounded-2xl  ${
             open
               ? rightToLeft === true &&
                 leftToRight === false &&
