@@ -24,14 +24,14 @@ const FlipCard = ({
       <div
         className={`transition-all duration-500 animate-fade  ${
           open
-            ? "backdrop fixed inset-0 z-0 outline-none justify-center items-center flex overflow-hidden"
+            ? "backdrop fixed inset-0 z-20 outline-none justify-center items-center flex  overflow-hidden"
             : "overflow-x-hidden overflow-y-auto fixed inset-0 z-0 outline-none justify-center items-center flex"
         }`}
       />
       <div className={`flex flex-col justify-center `}>
-        <div className={`group h-[500px] w-96 [perspective:1000px] z-10 `}>
+        <div className={`group  ${open? "z-20":"z-10"}`}>
           <div
-            className={`relative w-full h-full shadow-xl rounded-xl [transform-style:preserve-3d] transition-all duration-1000 ${
+            className={`relative shadow-xl rounded-xl [transform-style:preserve-3d] transition-all duration-1000 ${
               open
                 ? rightToLeft === true &&
                   leftToRight === false &&
@@ -58,7 +58,7 @@ const FlipCard = ({
             }`}
           >
             <div
-              className="absolute inset-0 w-full text-center bg-white rounded-xl ps-12 text-slate-200"
+              className="relative inset-0 w-full text-center bg-white rounded-xl ps-12 text-slate-200"
               onClick={() => setopen(false)}
             >
               {componentBack}

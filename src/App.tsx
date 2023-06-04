@@ -28,6 +28,7 @@ const App = () => {
       <Route path="/support" element={<Support />} />
       <Route path="/dev" element={<Dev />} />
       <Route path="/developer" element={<Developer theme={mode} />} />
+      <Route path="/dev" element={<Dev />} />
     </Routes>
   );
 };

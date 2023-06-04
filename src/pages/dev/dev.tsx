@@ -14,13 +14,31 @@ const Dev = () => {
           bottomToTop={false}
           componentFront={
             <img
-              className="object-cover w-full h-full rounded-lg shadow-xl shadow-black/50 "
+              className="object-cover w-96 h-[500px] rounded-lg shadow-xl shadow-black/50 "
               src={images.mobileImg1}
             />
           }
           componentBack={
             <img
-              className="object-cover w-full h-full rounded-xl"
+              className="object-cover w-80 h-[500px] rounded-xl"
+              src={images.mobileImg2}
+            />
+          }
+        />
+        <FlipCard
+          rightToLeft={false}
+          leftToRight={false}
+          topToBottom={false}
+          bottomToTop={true}
+          componentFront={
+            <img
+              className="object-cover w-96 h-[500px] rounded-lg shadow-xl shadow-black/50 "
+              src={images.mobileImg1}
+            />
+          }
+          componentBack={
+            <img
+              className="object-cover w-80 h-[500px] rounded-xl"
               src={images.mobileImg2}
             />
           }
