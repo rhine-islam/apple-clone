@@ -16,6 +16,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import "./css/carousel.css";
 import data from "../../data/data";
+import CarouselLeftButton from "./carouselButton/carouselLeftButton";
+import CarouselRightButton from "./carouselButton/carouselRightButton";
 
 const CarouselCard = ({ color }: any) => {
   const [value, setValue] = useState(0);
@@ -47,31 +49,9 @@ const CarouselCard = ({ color }: any) => {
           {
             resolve: arrowsPlugin,
             options: {
-              arrowLeft: (
-                <button>
-                  <FontAwesomeIcon
-                    icon={faCircleChevronLeft}
-                    className={`-mr-8 relative z-10  ${
-                      String(color).toUpperCase() === "DARK"
-                        ? "text-black"
-                        : "text-white"
-                    }`}
-                  />
-                </button>
-              ),
+              arrowLeft: <CarouselLeftButton color={"dark"} />,
 
-              arrowRight: (
-                <button>
-                  <FontAwesomeIcon
-                    icon={faCircleChevronRight}
-                    className={`-ml-8  relative  ${
-                      String(color).toUpperCase() === "DARK"
-                        ? "text-black"
-                        : "text-white"
-                    }`}
-                  />
-                </button>
-              ),
+              arrowRight: <CarouselRightButton color={"dark"} />,
               addArrowClickHandler: true,
             },
           },
