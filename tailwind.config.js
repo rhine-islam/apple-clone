@@ -19,7 +19,7 @@ const FlipClass = plugin(function ({ addUtilities }) {
       transformStyle: "preserve-3d",
     },
     ".perspective": {
-      perspective: "8000px",
+      perspective: "1000px",
     },
     ".backface-hidden": {
       backfaceVisibility: "hidden",

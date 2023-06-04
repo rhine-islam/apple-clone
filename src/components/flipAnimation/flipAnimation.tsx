@@ -22,19 +22,19 @@ const FlipAnimation = ({
   return (
     <div>
       <div
-        className={`transition-all duration-500 animate-fade  ${
+        className={`transition-all   ${
           open
-            ? `${styles.backdrop} fixed inset-0 z-10 outline-none justify-center items-center flex  overflow-hidden`
-            : " inset-0 z-0 outline-none justify-center items-center flex relative"
+            ? `${styles.backdrop} fixed inset-0 z-10 outline-none justify-center items-center flex  overflow-hidden `
+            : ` absolute inset-0 z-0 outline-none justify-center items-center flex  overflow-hidden  ${styles.backdropClear} `
         }`}
       />
       <div
-        className={`cursor-pointer group perspective   ${
-          open ? "relative z-20 " : "z-10"
+        className={`cursor-pointer group perspective relative   ${
+          open ? " z-20 " : " z-10"
         }`}
       >
         <div
-          className={`  w-full h-full duration-[1500ms] preserve-3d shadow-lg shadow-black/60 rounded-2xl  ${
+          className={`w-full h-full duration-[1500ms] preserve-3d shadow-lg shadow-black/60 rounded-2xl  ${
             open
               ? rightToLeft === true &&
                 leftToRight === false &&
