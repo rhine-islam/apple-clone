@@ -29,9 +29,9 @@ const Dev = () => {
         />
         <FlipAnimation
           rightToLeft={false}
-          leftToRight={true}
+          leftToRight={false}
           topToBottom={false}
-          bottomToTop={false}
+          bottomToTop={true}
           componentFront={
             <img
               src={images.mobileImg1}
