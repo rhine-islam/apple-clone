@@ -21,7 +21,7 @@ const Dev = () => {
           }
           componentBack={
             <img
-              src={images.mobileImg3}
+              src={images.mobileImg2}
               alt="Something"
               className="w-[380px] h-[500px] "
             />
