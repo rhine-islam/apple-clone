@@ -25,7 +25,7 @@ const FlipAnimation = ({
         className={`transition-all   ${
           open
             ? `${styles.backdrop} fixed inset-0 z-20 outline-none justify-center items-center flex  overflow-hidden `
-            : ` absolute inset-0 z-0 outline-none justify-center items-center flex  overflow-hidden  ${styles.backdropClear} `
+            : ` fixed inset-0 z-0 outline-none justify-center items-center flex  overflow-hidden  ${styles.backdropClear} `
         }`}
       />
       <div
